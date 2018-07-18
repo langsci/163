@@ -1,0 +1,85 @@
+\newcommand{\semcons}[1]{(\uparrow\: \textsc{#1})_\sigma}
+\newcommand{\nil}[0]{\blacklozenge}
+\newcommand{\try}[0]{\texttt{try}}
+\avmfont{\scshape}
+\avmoptions{active}
+\avmvalfont{\scshape}
+
+\newcommand{\fst}[1]{\normalfont\textit{#1}\,}
+
+\newcommand{\darg}[1]{\underbar{#1}}
+\newenvironment{elsewhere}{}{}
+\newcommand{\alphared}{\ensuremath{\Rightarrow_\alpha}}
+
+\newcommand{\template}[1]{@\textsc{#1}}
+\newcommand{\templaten}[1]{\textsc{#1}}
+\newcommand{\templatenn}[1]{\MakeUppercase{#1}}
+\newcommand{\tempeq}{\ensuremath{=}}
+
+\newcommand{\lmt}{LMT}
+\newcommand{\lmtk}{LMT$_{\textsc{k}}$}
+\newcommand{\lmtkf}{LMT$_{\textsc{kf}}$}
+
+%\newcommand{\lfg}{\textsc{lfg}}
+\newcommand{\predval}[1]{\ensuremath{\langle}\textsc{#1}\ensuremath{\rangle}}
+\newcommand{\bare}{\templaten{BareV}}
+
+\newcommand{\high}[1]{\textbf{#1}} % highlighted text
+\newcommand{\term}[1]{\textit{#1}\/} % technical term
+\newcommand{\qterm}[1]{`{#1}'} % technical term, quotes
+\newcommand{\trns}[1]{\strut `#1'} % translation in glossed example
+\newcommand{\trnss}[1]{\strut \phantom{\sqz{}} `#1'} % translation in ungrammatical glossed example
+\newcommand{\scare}[1]{`#1'} % scare quotes
+\newcommand{\quoot}[1]{``#1''} % direct quote
+%\newcommand{\dq}[1]{``#1''} % direct quotation
+\newcommand{\tq}[1]{`#1'} % quoted term
+%\newcommand{\type}[1]{\mbox{\ensuremath{\mathit{#1}}\/}}  % type name
+\newcommand{\var}[1]{\mbox{\ensuremath{\mathit{#1}}\/}}  % variable name
+\renewcommand{\feat}[1]{\mbox{\textsc{#1}}}    % feature name
+\newcommand{\fval}[1]{\mbox{\sc #1}}    % f-structure value
+\newcommand{\mg}[1]{\mbox{\sc #1}}    % morphological gloss
+%\newcommand{\word}[1]{\textit{#1}}       % mention of word
+
+\newcommand{\xprime}[2][]{\textup{\mbox{{#2}\ensuremath{^\prime_{\hspace*{-.0em}\mbox{\footnotesize\ensuremath{\mathit{#1}}}}}}}}
+%\newcommand{\xzero}[1][]{}
+\providecommand{\xzero}[2][]{#2\ensuremath{^0_{\mbox{\footnotesize\ensuremath{\mathit{#1}}}}}}
+%\newcommand{\xbarbar}[1]{\mbox{$\mathrm{\overline{#1}}$}}
+\newcommand{\ix}[1]{\ensuremath{\hspace*{-.0em}{_{\mbox{\footnotesize{#1}}}}}}
+%\newcommand{\ix}[1]{\ensuremath{\hspace*{-.0em}{_{\mbox{\footnotesize\ensuremath{\mathit{#1}}}}}}}
+%\newcommand{\ix}[1]{#1}
+\newcommand{\args}[1]{\ensuremath{\langle}\textsc{#1}\ensuremath{\rangle}}
+% already defined \newcommand{\pred}[1]{`\textup{#1}'}
+\newcommand{\fsword}[1]{\textup{`#1'}}
+%\newcommand{\gap}{\raisebox{.35ex}{\underline{\hspace*{.75em}}}}
+\newcommand{\gf}{\textsc{gf}}
+\newcommand{\thisnode}{\raisebox{-.5ex}{*}}
+\newcommand{\mothernodeii}{$\mathcal{M}$(\raisebox{-.5ex}{*})}
+\newcommand{\mothernodei}{\ensuremath{\widehat{\raisebox{-.5ex}{*}}}}
+\providecommand{\up}{\hbox {$\uparrow$\kern .3em}}
+\providecommand{\Up}{\ensuremath{\uparrow}}
+\providecommand{\down}{\hbox {$\downarrow$\kern .3em}}
+\providecommand{\Down}{\ensuremath{\downarrow}}
+\providecommand{\updown}{\up \ensuremath{=} \down}
+\providecommand{\upsubj}{(\up \feat{subj}) \ensuremath{=} \down}
+\providecommand{\upobj}{(\up \feat{obj}) \ensuremath{=} \down}
+
+\providecommand{\phraserule}[2]%
+{\begin{tabular}[t]{lll}
+#1 & {\large $\rightarrow$} & #2
+\end{tabular}}
+\providecommand{\pscat}[1]%
+{\ensuremath{
+\mbox{
+\begin{tabular}[t]{c}
+#1
+\end{tabular}
+}
+}}
+
+
+\newcommand{\csn}[2]{%
+  \begin{tabular}[t]{c}
+    \protect {#1}\\
+    \protect {#2}
+  \end{tabular}
+}

@@ -1,0 +1,56 @@
+%%
+%% This is file `maltese.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% maltese.dtx  (with options: `package')
+%% 
+%% This is a generated file.
+%% 
+%% Copyright (C) 2004 by Paulseph-John Farrugia <paulseph@hotmail.com>
+%% 
+%% This file may be distributed and/or modified under the conditions of
+%% the LaTeX Project Public License, either version 1.2 of this license
+%% or (at your option) any later version.  The latest version of this
+%% license is in:
+%% 
+%%    http://www.latex-project.org/lppl.txt
+%% 
+%% and version 1.2 or later is part of all distributions of LaTeX version
+%% 1999/12/01 or later.
+%% 
+\NeedsTeXFormat{LaTeX2e}[1999/12/01]
+\ProvidesPackage{maltese}[2003/11/24 v1.3 Maltese input support]
+\RequirePackage{ucs}
+\let\h@bar=\=
+\DeclareUnicodeCharacter{"126}{\leavevmode\rlap{\h@bar{\empty}}H\llap{\h@bar{\empty}}}
+\DeclareUnicodeCharacter{"127}{\leavevmode\rlap{\h@bar{\empty}}h}
+\newcommand{\mc}{\unichar{"10B}}
+\newcommand{\mC}{\unichar{"10A}}
+\newcommand{\mg}{\unichar{"121}}
+\newcommand{\mG}{\unichar{"120}}
+\newcommand{\mh}{\unichar{"127}}
+\newcommand{\mH}{\unichar{"126}}
+\newcommand{\mz}{\unichar{"17C}}
+\newcommand{\mZ}{\unichar{"17B}}
+\newcommand{\my}{{g\mh}}
+\newcommand{\mY}{{G\mh}}
+\newcommand{\mi}{{ie}}
+\newcommand{\mI}{{Ie}}
+\newcommand{\maltesec}{\mc}
+\newcommand{\malteseC}{\mC}
+\newcommand{\malteseg}{\mg}
+\newcommand{\malteseG}{\mG}
+\newcommand{\malteseh}{\mh}
+\newcommand{\malteseH}{\mH}
+\newcommand{\maltesez}{\mz}
+\newcommand{\malteseZ}{\mZ}
+\newcommand{\maltesey}{\my}
+\newcommand{\malteseY}{\mY}
+\newcommand{\maltesei}{\mi}
+\newcommand{\malteseI}{\mI}
+\newcommand{\maltesetext}[1]{\bgroup\fontfamily{cmr}\selectfont#1\egroup}
+\endinput
+%%
+%% End of file `maltese.sty'.

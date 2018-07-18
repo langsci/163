@@ -1,0 +1,44 @@
+% !TEX encoding = UTF-8 Unicode
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   $RCSfile: phrasal-or-lexical.tex,v $
+%%  $Revision: 1.10 $
+%%      $Date: 2009/03/27 16:28:42 $
+%%     Author: Stefan Mueller (DFKI)
+%%    Purpose: 
+%%   Language: LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[output=short    % long|short|inprep              
+	        %,blackandwhite
+	        %,smallfont
+%	        ,draftmode
+                ,bibtex
+                ,newtxmath
+                ,babelshorthands
+                %,showindex
+		  ]{langsci/langscibook}                          
+
+% Anonymisierung
+%\newcommand{\omitted}[1]{[omitted]}
+\newcommand{\omitted}[1]{#1}
+
+% Anonymisierung von \nocite-Aufrufen
+%\newcommand{\reallyomitted}[1]{}
+\newcommand{\reallyomitted}[1]{#1}
+
+\newcommand{\submitOrNormal}[2]{#2}
+
+
+
+
+\input{phrasal-lfg-include}
+
+
+\input{backmatter}
+
+
+
+
+
+
+\end{document}

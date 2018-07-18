@@ -1,0 +1,92 @@
+% Time-stamp: <2015-11-26 16:54:20 admin>
+% Author: Ash Asudeh
+% Date: June 23, 2003
+% Package for  natural deduction proofs in the list (Fitch?) style
+% Proof presentation based on LTF Gamut, Logic Language and Meaning
+
+% For line drawing
+\RequirePackage{pstricks,pst-node}
+
+% A new counter for numbering the steps
+\newcounter{fitch}
+\setcounter{fitch}{1}
+
+% A counter augmentation command
+\newcommand{\fitchify}{\thefitch.\stepcounter{fitch}}
+%\newcommand{\fitchify}{\theenumi.\stepcounter{enumi}}
+
+%% These didn't work in the expected way; no idea why
+\newlength{\assumdepth}
+\setlength{\assumdepth}{0.25em}
+
+% \newlength{\assumincr}
+% \setlength{\assumincr}{0.25em}
+
+\newcounter{refsave}
+%\setcounter{refsave}{\value{theeq}}
+
+\newcommand{\proofcountstart}{%
+  \setcounter{refsave}{\value{ref}}
+  \setcounter{ref}{1}
+}
+
+\newcommand{\proofcountend}{%
+  \setcounter{ref}{\value{refsave}}
+}
+
+% A new environment for listed proofs of the form
+% Step number & formula & rule on steps
+% e.g.  1.  P      assumption
+%       2.  P v Q  Ev, 1
+\newenvironment{prooflist}
+{\setcounter{fitch}{1}
+%\proofcountstart
+\begin{tabular}[t]{l@{\protect\fitchify\hspace*{\tabcolsep}}ll}}
+{\end{tabular}
+%\proofcountend
+}
+
+% \newcommand{\p}[1]{\label{p#1}}
+% \newcommand{\rp}[1]{\ref{p#1}}
+
+% Introduce a new assumption with this command
+\newcommand{\assume}[1]{\rnode[tl]{#1}{\raisebox{0.75ex}{}}}
+
+% Markup for assumption in description field
+\newcommand{\assump}{assumption}
+
+% Discharge assumptions with this command
+% I wanted to define lengths and increment them appropriately for the
+% discharge lines to maintain space, but it didn't work. 
+% The third argument is a hack to allow manual incrementation (see
+% example below)
+\newcommand{\discharge}[2]{\hfill\raisebox{-0.85ex}{\rnode[l]{#2}{}}
+  \ncangles[angleA=180,angleB=0,armA=\assumdepth,armB=0em,linewidth=0.25pt]{#1}{#2}}
+
+
+\newcommand{\discharges}[3]{\hfill\raisebox{-0.85ex}{\rnode[l]{#2}{}}
+  \ncangles[angleA=180,angleB=0,armA=#3,armB=0em,linewidth=0.25pt]{#1}{#2}}
+
+% meaning-adorned (stacked) proof steps for prooflist
+\providecommand{\pformula}[2]{%
+  \hspace*{-.8em}
+  \begin{array}[t]{l}
+    \formula{#1:}\\%[-0.5ex]
+    \formula{#2}
+  \end{array}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% An example (from Gamut, vol. 1, p.140)
+% \begin{prooflist}
+% \assume{1}& $\neg (p \vee \neg p)$ & assumption\\
+% \assume{2}& p & assumption\\
+% & $p \vee \neg p$ & I$\vee$, 2\\
+% & $\bot$ & E$\neg$, 1, 3\discharges{2}{3}{1em}\\
+% & $\neg p$ & I$\neg$\\
+% & $p \vee \neg p$ & I$\vee$, 5\\
+% & $\bot$ & E$\neg$, 1, 6\discharges{1}{4}{2em}\\
+% & $\neg\neg(p \vee \neg p)$ & I$\neg$\\
+% & $p \vee \neg p$ & $\neg\neg$, 8
+% \end{prooflist}

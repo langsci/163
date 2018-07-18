@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Time-stamp: <2011-11-02 11:01:46 asudeh>
+%% SEMANTICS macros
+%% With input from Frank Keller and Chris Potts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% St. Mü. \RequirePackage{amssymb}
+%\RequirePackage[cspex]{mathbbol}
+\RequirePackage{stmaryrd}
+\RequirePackage{latexsym}
+
+%% Those damned denotation brackets
+
+%%$ Old Attempts
+%% semantic brackets
+% \newcommand{\lsembrac}{\mbox{[ \kern-0.5em [}}
+% \newcommand{\rsembrac}{\mbox{] \kern-0.5em ]}}
+% \newcommand{\sem}[1]{{\lsembrac\textbf{#1}\rsembrac}}
+
+% %% semantic brackets
+% \newcommand{\sembrac}[2]{\ensuremath{\left[\hspace{-#1}\left[{#2}\right]\hspace{-#1}\right]}}
+
+%% Suggested by Chris Potts; these seem cleaner implementations than
+%% the above. I added \mbox{} to get better typesetting
+
+% % Basic brackets
+% \newcommand{\sem}[1]{\ensuremath{%
+% [\negthinspace [ \mbox{#1} ] \negthinspace ]}}
+
+% % Relative to a model
+% \newcommand{\semM}[1]{\ensuremath{%
+% [\negthinspace [ \mbox{#1} ] \negthinspace ]^{\mathcal{M}}}}
+
+% % Relative to a model and assignment g, where g
+% % is the default, and specifying an optional argument
+% % (updated assignment) is allowed
+% \newcommand{\semMg}[2][g]{\ensuremath{%
+% [\negthinspace [\mbox{#2}] \negthinspace ]^{\mathcal{M},{#1}}}}
+
+% % Better to just do a separate one for updates
+% \newcommand{\semMgu}[2]{\ensuremath{%
+% [\negthinspace [\mbox{#1}] \negthinspace ]^{\mathcal{M},{\protect[#2\protect]}}}}
+
+% % Relative to a model, assignment, world, context, 
+% \newcommand{\semMgwc}[2][g,w,c]{\ensuremath{%
+% [\negthinspace [\mbox{#2}] \negthinspace ]^{\mathcal{M},{#1}}}}
+
+%%% Using the package mathbbol gets even better results:
+%%  Basic brackets
+
+% Individual
+\newcommand{\Lsem}{\ensuremath{\left\llbracket}}
+\newcommand{\Rsem}{\ensuremath{\right\rrbracket}}
+
+% enclosing
+\newcommand{\sem}[2][]{\ensuremath{%
+\left\llbracket \mbox{#2} \right\rrbracket^{#1}}}
+
+% Relative to a model
+% \newcommand{\semM}[1]{\ensuremath{%
+% \llbracket \mbox{#1} \rrbracket^{\mathcal{M}}}}
+\newcommand{\semM}[2][]{\sem[\mathbf{M}#1]{#2}}
+
+% Relative to a model and assignment g, where g
+% is the default, and specifying an optional argument
+% (updated assignment) is allowed
+\newcommand{\semMg}[2][g]{\ensuremath{%
+\llbracket \mbox{#2} \rrbracket^{\mathcal{M},{#1}}}}
+
+% Better to just do a separate one for updates
+\newcommand{\semMgu}[2]{\ensuremath{%
+\llbracket \mbox{#1} \rrbracket^{\mathcal{M},{\protect[#2\protect]}}}}
+
+% Relative to a model, assignment, world, context, 
+\newcommand{\semMgwc}[2][g,w,c]{\ensuremath{%
+\llbracket \mbox{#1} \rrbracket^{\mathcal{M},{#1}}}}
+
+%%% Other delimiters
+% Here are protected square brackets
+\newcommand{\lsquare}{\protect[}
+\newcommand{\rsquare}{\protect]}
+
+%% angled brackets for types, tuples, etc
+\newcommand{\la}{\ensuremath{\langle}}
+\newcommand{\ra}{\ensuremath{\rangle}}
+\newcommand{\tuple}[1]{\ensuremath{\langle#1\rangle}}
+\newcommand{\bracket}[1]{\ensuremath{\left\langle\mathit{#1}\right\rangle}}
+
+%% Up and Down
+%% Semantics, intension
+\newcommand{\scap}{\ensuremath{\mbox{\^{}}}}
+
+%% Semantics, down operator
+\newcommand{\shat}{\ensuremath{\mbox{\v{}}}}
+\newcommand{\sdown}{\ensuremath{\mbox{\v{}}}}
+
+%% Various symbols
+% contradiction
+\newcommand{\con}{$\bot$}
+
+% \varphi
+\newcommand{\vphi}{\ensuremath{\varphi}}
+
+% Chris Potts's context symbol
+\newcommand{\conC}{\ensuremath{\mathfrak{C}}}
+
+% Denotation markup
+\newcommand{\deno}[1]{\ensuremath{\mathit{#1^\prime}}}
+
+% Variable substitution
+\newcommand{\usub}[2]{\mbox{\footnotesize\protect[#1/#2]}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% for drs.sty
+
+% Frank: DRS with empty universe
+\newcommand{\emptydrs}[1]{\begin{tabular}{|c|}
+                  \hline
+                    \\[-8pt] 
+                    #1 \\[-8pt] \\
+                  \hline
+                \end{tabular}}
+
+\newcommand{\emptytopdrs}[1]{\begin{tabular}[t]{|c|}
+                  \hline
+                    \\[-8pt] 
+                    #1 \\[-8pt] \\
+                  \hline
+                \end{tabular}}
+
