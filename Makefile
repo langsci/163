@@ -1,17 +1,24 @@
-SOURCE=  $(wildcard *.tex)
+SOURCE=  $(wildcard *.tex) phrasal-lfg.bib
+BIBTOOL = bibtool-Mac
 
 .SUFFIXES: .tex
 
 
 %.pdf: %.tex $(SOURCE)
 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
+	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $* 
+	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $*
 	correct-index
-	\rm $*.adx
-	authorindex -i -p $*.aux > $*.adx
-	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
-	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.adx
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldx
+	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' *.adx
+	sed -i.backup 's/{\\O }/Oe/' *.adx
+	python3 fixindex.py
+	mv $*mod.adx $*.adx
+	makeindex -gs index.format-plus -o $*.and $*.adx
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
@@ -22,7 +29,7 @@ all: phrasal-lfg-langsci.pdf
 
 
 
-${HOME}/Sites/Pub/phrasal-lfg.pdf: phrasal-lfg.pdf 
+${HOME}/Sites/Pub/phrasal-lfg-langsci.pdf: phrasal-lfg-langsci.pdf 
 	cp -p $? ${HOME}/Sites/Pub/
 
 
@@ -31,11 +38,20 @@ ${HOME}/Sites/Pub/phrasal-lfg-headlex2016.pdf: phrasal-lfg-headlex2016.pdf
 
 
 
-o-public: ${HOME}/Sites/Pub/phrasal-lfg.pdf
-	scp -p $? home.hpsg.fu-berlin.de:/home/stefan/public_html/Pub/
+o-public: ${HOME}/Sites/Pub/phrasal-lfg-langsci.pdf
+	scp -p $? hpsg.hu-berlin.de:/home/stefan/public_html/Pub/
 
 
 #	svn commit -m "automatic commit"
+
+
+phrasal-lfg.bib: ../../Bibliographien/biblio.bib
+	xelatex -no-pdf -interaction=nonstopmode bib-creation 
+	bibtex bib-creation
+	xelatex -no-pdf -interaction=nonstopmode bib-creation 
+	$(BIBTOOL) -r ../../Bibliographien/.bibtool77-no-comments  -x bib-creation.aux -o phrasal-lfg-tmp.bib
+	cat ../../Bibliographien/bib-abbr.bib phrasal-lfg-tmp.bib > phrasal-lfg.bib
+	\rm -r phrasal-lfg-tmp.bib
 
 
 clean:

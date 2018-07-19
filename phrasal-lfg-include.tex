@@ -4,6 +4,9 @@
 \input{localpackages.tex}
 \input{localcommands.tex}
 
+%\bibliography{phrasal-lfg}
+
+
 \begin{document}
 %\setcounter{page}{9001}
 
@@ -17,9 +20,24 @@
 
 \chapter{Preface}
 
-To be completed.
+This book is part of my efforts to convince Construction Grammarians and people working in related
+frameworks that lexical approaches to argument structure are the only ones possible within a certain
+set of basic assumptions. I started this discussion with Kerstin Fischer and Anatol Stefanowitch 15
+years ago in Bremen and continued it with friends and colleagues in the DFG-financed Construction
+Grammar network. Several publications grew out of this work
+\citep{Mueller2006d,Mueller2007d,MuellerPersian,MWArgSt,MWArgStReply,MW2014a,MuellerSatztypen,MuellerDefaults}. Usually
+the proposals I argued against were not formalized and/or the phenomena I pointed out as problematic
+were not covered in theoretical work so far. This is different for the present book: the
+constructional proposals I discuss are formulated in Lexical Functional Grammar. Most of the
+phenomena are covered and one can clearly see consequences of the proposals I discuss. The book does
+not only discuss a constructional LFG analysis of benefactive constructions, it also provides an
+alternative lexical HPSG analysis that also shows how interactions of benefactives with resultative
+constructions and passive and derivational morphology can be covered in a way that allows for
+cross-linguistic generalizations. The HPSG analysis is implemented in the TRALE system
+\citep*{MPR2002a-u,Penn2004a-u} as part of the CoreGram project \citep{MuellerCoreGram} and will be part of the Grammix Virtual Machine
+\citep{MuellerGrammix}.\todostefan{add tsdb sample sentences}
 
-\section{Acknowledgments}
+\section*{Acknowledgments}
 
 I thank Ash Asudeh for a really detailed discussion of an earlier version of this book and of
 \citew{AGT2014a}. I thank Ida Toivonen for discussion of \citew{Toivonen2013a} and \citew{AGT2014a}
@@ -43,6 +61,11 @@ A five page abstract was submitted to HeadLex 16, the joint conference on LFG an
 grateful to the reviewers of this abstract and the reviewers of a revised 20 page version. I also
 thank Miriam Butt and Tracy Holloway King for comments on and discussion of the proceedings version.  The
 comments helped a lot to shape and improve this book. Thanks!  
+
+~\medskip
+
+\noindent
+Berlin, July 18, 2018\hfill Stefan Müller
 
 
 \mainmatter
@@ -831,7 +854,8 @@ licenses the objects and we have an IP rule that combines the VP with an NP/DP. 
 rule ensures that there is a \subj. Without these additional constraints from c-structure
 configurations the approach would overgenerate. As I will show in Chapter~\ref{sec-active-passive} this is
 problematic since the assignment of grammatical functions in passives has to be taken care of by
-c"=structure rules that are specific to the benefactive construction, which results in missing generalizations.
+c"=structure rules that are specific to the benefactive construction, which results in missing
+generalizations.\todostefan{ncline does not work properly}
 
 \begin{figure}
   \centering
@@ -1323,7 +1347,7 @@ The rule for the benefactive construction in (\mex{1}) was provided in
 \ea
 The performer sang the children a song.
 \z
-\ea\label{c-struc-vp-benefactive-too}
+\ea\label{c-struc-vp-benefactive-two}
 \oneline{\phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down\\*( @\textsc{Benefactive} )}
 \rulenode{DP\\*(\up\ \obj) = \down}
@@ -3054,7 +3078,7 @@ In order to cover this in a phrasal analysis, one would need a resultative/benef
   This ignores the possibility of inserting adjuncts and the option to scramble the DP arguments.
 }
 \ea\label{c-struc-vp-benefactive-resultative-optional-args}
-\resizebox{.99\linewidth}{!}{%
+%\resizebox{.99\linewidth}{!}{%
 \begin{tabular}[t]{@{}l@{~}l@{}}
 {V$'$} $\to$ & 
   \rulenode{(DP)\\*(\up\ \subj) = \down}
@@ -3063,7 +3087,8 @@ In order to cover this in a phrasal analysis, one would need a resultative/benef
 %
 & \rulenode{(\{AP|PP\})\\*(\up\ \xcomp) = \down\\*( @\textsc{result-t}((\up PRED FN)) )}%\hspace{-2ex}
   \rulenode{(V)\\* \up~=~\down\\*( @\textsc{Benefactive} )}
-\end{tabular}}
+\end{tabular}
+%}
 \z
 
 The interesting thing about this rule is that all items on the right-hand side are optional. The
