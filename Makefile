@@ -27,7 +27,12 @@ BIBTOOL = bibtool-Mac
 all: phrasal-lfg-langsci.pdf 
 
 
-
+#create a png of the cover
+cover: FORCE
+	convert phrasal-lfg-langsci.pdf\[0\] -quality 100 -background white -alpha remove -bordercolor "#999999" -border 2  cover.png
+	cp cover.png googlebooks_frontcover.png
+	convert -geometry 50x50% cover.png covertwitter.png
+	display cover.png
 
 ${HOME}/Sites/Pub/phrasal-lfg-langsci.pdf: phrasal-lfg-langsci.pdf 
 	cp -p $? ${HOME}/Sites/Pub/
@@ -62,3 +67,6 @@ clean:
 
 realclean: clean
 	rm -f *.dvi *.ps *.pdf
+
+
+FORCE:
