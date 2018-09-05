@@ -1,4 +1,5 @@
-SOURCE=  $(wildcard *.tex) phrasal-lfg.bib
+SOURCE=  $(wildcard *.tex)
+SOURCE_ALL=  $(wildcard *.tex) phrasal-lfg.bib
 BIBTOOL = bibtool-Mac
 
 .SUFFIXES: .tex
