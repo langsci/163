@@ -62,7 +62,9 @@ phrasal-lfg.bib: ../../Bibliographien/biblio.bib
 clean:
 	find . -name \*\.bak -exec \rm {} \;
 	find . -name \*~ -exec \rm {} \;
-	rm -f *.bak *.toc *.bbl *.blg *~ *.log *.aux *.*pk *.out *.tmp *.cut *.bbl.old
+	rm -f *.bak *.toc *.bbl *.blg *~ *.log *.aux *.*pk *.out *.tmp *.cut *.bbl.old	*.and *.glg *.glo *.gls *.657pk *.adx.hyp *.bbl.old *.ldx *.lnd *.rdx *.sdx *.snd *.wdx \
+	*.wdv *.xdv chapters/*.aux *.for *.aux.copy *-blx.bib *.auxlock *.bcf *.mw *.run.xml *.backup _autidx_.bib
+
 
 
 realclean: clean
