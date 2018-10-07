@@ -1,4 +1,5 @@
 %% -*- coding:utf-8 -*-
+%% 130
 
 \input{localmetadata.tex}
 \input{localpackages.tex}
@@ -33,7 +34,7 @@ phenomena are covered and one can clearly see consequences of the proposals I di
 not only discuss a constructional LFG analysis of benefactive constructions, it also provides an
 alternative lexical HPSG analysis that also shows how interactions of benefactives with resultative
 constructions and passive and derivational morphology can be covered in a way that allows for
-cross-linguistic generalizations. The HPSG analysis is implemented in the TRALE system
+cross"=linguistic generalizations. The HPSG analysis is implemented in the TRALE system
 \citep*{MPR2002a-u,Penn2004a-u} as part of the CoreGram project \citep{MuellerCoreGram} and will be part of the Grammix Virtual Machine
 \citep{MuellerGrammix}.
 
@@ -51,7 +52,7 @@ discussion of the attachment of constraints to c-structures and Economy of Expre
 I also want to thank the participants of HeadLex 2016 for (intense) discussion. Miriam Butt, Mary Dalrymple,
  Ron Kaplan, and Anna Kibort deserve special mention.
 
-Thanks to Martin Haspelmath and Adam Przepiórkowski for comments on an earlier version of this book.
+Thanks also goes to Martin Haspelmath and Adam Przepiórkowski for comments on an earlier version of this book.
 
 Furthermore, I thank Gert Webelhuth, Gerald Penn, Tom Wasow, Paul Kay, %Antwort auf HPSG liste
 Adele Goldberg, Jean-Pierre Koenig, Doug Arnold, Aaron Broadwell, and Berthold Crysmann for various
@@ -96,7 +97,7 @@ Berlin, July 18, 2018\hfill Stefan Müller
 %% regarding c"=structure are missing in the same way as they are missing in simple phrase structure
 %% grammar. Such missing generalizations motivated Harris and Chomsky to introduce transformations, but
 %% transformations are not used in LFG and hence the generalizations regarding active/passive
-%% c"=structure pairs cannot be captured. Furthermore, I show that cross-linguistic generalizations
+%% c"=structure pairs cannot be captured. Furthermore, I show that cross"=linguistic generalizations
 %% cannot be captured with reference to phrasal configurations since languages differ in the way they
 %% actually realize resultative and benefactive constructions. It is shown that languages like German
 %% that allow much freer constituent order than English and partial verb phrases are incompatible
@@ -116,18 +117,33 @@ This book argues that argument structure should be treated lexically rather than
 configurations. This is discussed with respect to the benefactive construction and the resultative
 construction. It is shown that both constructions are more flexible than claimed in previous
 publications and that generalizations about the construction cannot be captured language internally
-and cross-linguistically in phrasal approaches. This first chapter is intended to introduce the
+and cross"=linguistically in phrasal approaches. This first chapter is intended to introduce the
 reader to the history and current form of the phrasal/lexical debate.
 
-Two big camps in linguistics are the Chomskyan research tradition
+There are two big camps in linguistics: the Chomskyan research tradition
 \citep{Chomsky81a,Chomsky95a-u} going back to earlier work by \citet{Chomsky57a} and the
-more recent framework of Construction Grammar
-\citep*{FKoC88a,Goldberg95a,Goldberg2006a,Tomasello2003a}. Within the Chomskyan research tradition
-\emph{Lectures on Government \& Binding} was very influential. It initiated a lot of research, both
+more recent framework of Construction Grammar (CxG, \citealt*{FKoC88a,Goldberg95a,Goldberg2006a,Tomasello2003a}).\footnote{%
+  The series editors asked me to modify this sentence since I would run the risk of annoying my
+  readers on the first page of my book by stating that there are just two big camps in linguistics. I decided to leave the statement as is
+  since I think it is the truth. I believe that I can make such a statement since I am working in a
+  minority framework myself (Head-Driven Phrase Structure Grammar). I discussed various theoretical frameworks (Categorial Grammar,
+  Generalized Phrase Structure Grammar, Lexical Functional Grammar, Tree Adjoining Grammar,
+  Dependency Grammar) in \citew{MuellerGT-Eng2}. Mainstream Generative Grammar (GB/Minimalism) and Construction Grammar
+  differ from all other frameworks discussed in the book and smaller ones that could not be discussed
+  in having various journals and book series exclusively dedicated to research within GB/Minimalism
+  and CxG and in the number and size of conferences. A further difference is the number of chairs world wide and
+  the number of grant applications per framework.
+% Rivista di Grammatica Generativa, Syntax, Linguistic Inquiry, NLLT, 
+% LI Monographs, Studies in Generative Grammar
+% Constructions and Frames
+% Constructional approaches to Language, Benjamins
+}
+Within the Chomskyan research
+tradition \emph{Lectures on Government \& Binding} was very influential \citep{Chomsky81a}. It initiated a lot of research, both
 in syntax and in language acquisition. Starting with \citet{Chomsky73a} and \citet{Jackendoff77a}
 restrictive models of constituent structure were assumed stating that all constituents that are
 licensed by a core grammar have the format determined by \xbar schemata. It was argued that there is
-a Poverty of the Stimulus from which it follows that there has to be innate domain specific
+a Poverty of the Stimulus from which it follows that there has to be innate domain"=specific
 knowledge about linguistics (Universal Grammar = UG). The part of the grammar that is acquired with
 the help of this UG is called the core grammar. The rest being the so-called periphery. The \xbar
 schemata are rather abstract rules that state that a head combines with its complements to form an
@@ -138,16 +154,16 @@ projection (a complete phrase = XP) results (\mex{1}c).
 \ex \xbar $\to$ \xbar YP
 \ex \xbar $\to$ X ZP
 \zl
-In addition to such abstract rules general principles were assumed. The principles were formulated
+In addition to such abstract rules, general principles were assumed. The principles were formulated
 in a way that was general enough to make them work for all languages. The differences between
 languages were explained with references to parameters that could be set appropriately for a given
 language or language class. The parameters were assumed to be each responsible for a variety of
 phenomena so that the fixation of one parameter helped children to infer a lot of properties in one
-go and hence make language acquisition possible despite the alledged Poverty of the Stimulus.
+go and hence make language acquisition possible despite the alleged Poverty of the Stimulus.
 This general framework was very fruitful and inspired a lot of comparative work. However, it was
-realized pretty soon that switch-like parameters cannot be found: it is not the case that a bunch of
+realized pretty soon that switch-like parameters cannot be found: it is not the case that a abundance of
 phenomena is connected crosslinguistically (Haider \citeyear{Haider94c-u}, \citeyear[Section~2.2]{Haider2001a}; \citealp[Section~16.1]{MuellerGT-Eng1}). There are tendencies, for sure, but no hard switch-like
-parameters that work exceptionless for all languages. Furthermore it has been pointed out that there
+parameters that work exceptionless for all languages. Furthermore, it has been pointed out that there
 are no abrupt changes in language acquisition, something that would be expected if language
 acquisition would involve setting binary parameters.
 
@@ -165,7 +181,7 @@ constituent in an existing tree and attaches it at the left periphery.
 The Chomskyan division of Core and Periphery was criticized by proponents of Construction Grammar
 and the related Simpler Syntax since it was pointed out that a large part of our linguistic
 knowledge would be assigned to the Periphery. Now, if we are able to acquire the Periphery, which is
-by defenition the irregular part of our linguistic systems, why shouldn't we be able to acquire the
+by definition the irregular part of our linguistic systems, why shouldn't we be able to acquire the
 more regular parts of the Core? And indeed recent advances in statistical methods show that
 input-based learning is very likely to be sufficient for language acquisition: statistics-based
 determination of part of speech information is quite successful and \citet{Bod2009a} showed how
@@ -175,9 +191,9 @@ simulations by the group around Freudenthal yielded better explanations of langu
 earlier generative accounts \citep{FPAG2007a}.
 
 So, Construction Grammarians assume an input-based acquisition of language and reject the assumption
-of innate language specific knowledge. It is assumed that language acquisition works via
+of innate language"=specific knowledge. It is assumed that language acquisition works via
 generalization over patterns. For instance, \citet{Tomasello2003a} assumes a transitive construction
-consisting of a subject, verb and object:
+consisting of a subject, verb, and object:
 \ea
 {}[Subj TrVerb Obj]
 \z
@@ -195,7 +211,7 @@ and assume a VP. Nevertheless, it is obvious that Construction Grammar analyses 
 observable data and that most CxG analyses assume phrasal schemata like (\mex{-1}). 
 
 The following figures show the analysis of (\mex{1}) in Minimalism and in Construction Grammar. The analysis
-in Figure~\ref{fig-Anna-reads-the-book-flat-CxG} is a totally flat structure as assumed by Croft and the one in Figure~\ref{fig-Anna-reads-the-book-VP} is an
+in Figure~\ref{fig-Anna-reads-the-book-flat-CxG} is a completely flat structure as assumed by Croft and the one in Figure~\ref{fig-Anna-reads-the-book-VP} is an
 analysis with VP as it is assumed in Sign-Based Construction Grammar and the analysis in
 Figure~\ref{fig-Anna-reads-the-book-minimalism-TP} is the Minimalist analysis in the version of \citet{Adger2003a}.
 \ea
@@ -246,7 +262,7 @@ baseline
 \caption{\label{fig-Anna-reads-the-book-minimalism-TP}Minimalist analysis of \emph{Anna reads the
     book.} according to \citet{Adger2003a}}
 \end{figure}%
-As is obvious the Minimalist analysis is much more complex. It involves additional categories like T
+As is obvious, the Minimalist analysis is much more complex. It involves additional categories like T
 and \textit{v}. On the other hand the combinatorical operations (Merge) are very simple: two
 constituents are combined. Which elements are possible in such binary combinations is determined by
 features. For instance, verbs have features that correspond to the valence information known from
@@ -254,37 +270,37 @@ other theories (\eg LFG and HPSG).
 
 The general debate is whether such structures can be learned or whether flat or flatter structures
 have to be assumed. Another issue is whether syntax is something involving abstract algorithmic
-rules like Move and Merge or whether syntax is a set of construction specific rules that are
+rules like Move and Merge or whether syntax is a set of construction"=specific rules that are
 combined with meaning. Semantics plays an important role in language acquisition. Work
 in GB and Minimalism usually deals with syntax only and ignores semantics, an exception being work
-in the Cartographic tradition of \citet{Rizzi97a-u}. In the latter type of work information of all levels
-is syntactified and we find semantic categories like Agent and Patient and information structure
+in the Cartographic tradition of \citet{Rizzi97a-u}. In the latter type of work, information of all levels
+is syntactified, and we find semantic categories like Agent and Patient and information structure
 categories like Topic and Focus as node labels in syntactic trees. In Construction Grammar, on the
 other hand, there is the claim that every construction comes with a certain meaning. Therefore,
 syntax and semantics are often treated simultaneously. This is also true for related theories like
-Head-Driven Phrase Structure Grammar (HPSG, \citew{ps,ps2,Sag97a}, which I am assuming here.
-Construction Grammar assumes that grammar is basically a set of form meaning pairs. Lexical items,
-phrasal schemata, lexical rules are all form meaning pairs. A special case of construction are
+Head-Driven Phrase Structure Grammar (HPSG, \citew{ps,ps2,Sag97a}), which I am assuming here.
+Construction Grammar assumes that grammar is basically a set of form"=meaning pairs. Lexical items,
+phrasal schemata, lexical rules are all form"=meaning pairs. A special case of construction are
 so-called \emph{argument structure constructions}\footnote{%
 The term \emph{argument structure construction} is an established term in Construction Grammar
-  research. See for instance some of the paper and book titles in the list of references.
+  research. See, for instance, some of the paper and book titles in the list of references.
 }. The term \emph{argument structure construction} refers to some theoretical entity (lexical item,
 lexical rule, phrase structure rule or schema) that licenses arguments. Depending on the authors,
 argument structure constructions can be lexical or phrasal constructions. This book is a
-contribution to the question how argument structure constructions should be treated. While
+contribution to the question of how argument structure constructions should be treated. While
 Minimalism assumes that heads select for arguments and abstract rules combine heads with arguments,
 most researchers working in Construction Grammar assume that there are very specific constructions
 that contribute meaning and license arguments. In what follows, I will introduce the specific topic
 of this book in a bit more detail. As I will show the question is not just Minimalism
-vs.\ Construction Grammar since there are other theories that differ considerably from Minimalism
+vs.\ Construction Grammar since there are other theories that differ considerably from Minimalism,
 but nevertheless assume rich lexical items and very abstract combinatorical schemata. So the
 question of how arguments and heads should be represented and combined is a very central one that
 affects many linguistic frameworks.
 
-\citet{Goldberg95a,Goldberg2006a}, \citet{Tomasello2003a} and others argue for a phrasal view on argument structure
+\citet{Goldberg95a,Goldberg2006a}, \citet{Tomasello2003a} and others argue for a phrasal view of argument structure
 constructions: lexical entries for verbs come with minimal specifications as to which arguments are
-required by a verb but they come with a specification of argument roles. Verbs can be inserted into phrasal
-constructions and these constructions may express the arguments that belong to a verb semantically
+required by a verb, but they come with a specification of argument roles. Verbs can be inserted into phrasal
+constructions, and these constructions may express the arguments that belong to a verb semantically
 or even add further arguments. A frequently discussed example is the one in (\mex{1}):
 
 
@@ -298,7 +314,7 @@ which licenses an additional argument (\emph{his sneakers}) and a result predica
 pattern rather than by one of its elements (for instance, Goldberg, \citeyear[\page
   88--89]{Goldberg91a}; \citeyear{Goldberg95a}; \citew[\page 533]{GJ2004a}). The lexical approach assumes that there are several lexical items for verbs
 like \emph{run}. There is the lexical item that is needed to analyze simple sentences with the
-intransitive verb and its subject and there is a further lexical item that is used in the analysis
+intransitive verb and its subject, and there is a further lexical item that is used in the analysis
 of sentences like (\mex{0}). The latter lexical item selects for a subject, an object and a result
 predicate and contributes the resultative semantics. Both lexical items are usually related by a lexical
 rule. See \citew{Simpson83a}, \citew{Verspoor97a}, \citew{Wechsler97a}, \citew{WN2001a},
@@ -311,10 +327,10 @@ Lexical approaches usually assume abstract rules or schemata for the combination
 items. For instance, Categorial Grammar assumes functional application and Minimalism assumes
 Merge. Head-Driven Phrase Structure Grammar has a Head-Complement Schema and a Specifier-Head
 Schema. These abstract schemata are assumed to provide minimal semantic information (functional
-application) but do not add any construction specific semantics. Construction Grammar proposals like
+application) but do not add any construction"=specific semantics. Construction Grammar proposals like
 the one of Tomasello and the one of Goldberg come with strong claims about the non-existence of such
 abstract rules \citep[\page 99]{Tomasello2003a}. They argue with respect to language acquisition
-that all constructions are phrasal and that what is acquired is phrasal patterns. As I/we have shown
+that all constructions are phrasal and that what is acquired is phrasal patterns. As is shown
 in \citew[Section~11.11.8.1]{MuellerGTBuch1}, \citew{MuellerGT-Eng1} and \citew[Section~9.1]{MWArgSt},
 phrasal constructions cannot be the result of language acquisition, it is rather dependencies that
 are important for the characterization of the linguistic knowledge of competent speakers. This book
@@ -323,10 +339,10 @@ the sense of Categorial Grammar, HPSG and Minimalism are needed. Hence it argues
 on language that incorporates insights from both schools and fuses them into a new, unified
 framework.
 
-The question whether constructions like (\mex{0}) should be treated as lexical or as
-phrasal constructions has been discussed in the literature in several papers
+The question, whether constructions like (\mex{0}) should be treated as lexical or as
+phrasal constructions, has been discussed in the literature in several papers
 \citep{GJ2004a,Mueller2006d,Goldberg2013b,MWArgSt} but since most Construction Grammar publications
-(intentionally, see \citew{Goldberg2006a}) are not formalized the discussion of aspects not treated
+(intentionally, see \citew{Goldberg2006a}) are not formalized, the discussion of aspects not treated
 in the original proposal (\eg interaction with morphology, application of the approach to
 non"=configurational languages like German, partial verb phrase fronting) was rather
 hypothetical. There have been Construction Grammar-inspired proposals in HPSG
@@ -341,12 +357,12 @@ have empirical problems, to make wrong predictions or to be not extendable to ot
   this. SBCG is a HPSG variant (\citew[486]{Sag2010b}; \citew[Section~10.6.2]{MuellerGT-Eng1}) and
   hence it is no surprise that it is fully compatible with what is argued for in this book.
 } Recently, several articles
-have been published suggesting a template-based phrasal approach in LFG that makes use of glue-semantics, a resource-driven semantic
+have been published suggesting a template-based phrasal approach in LFG that makes use of glue semantics, a resource-driven semantic
 theory \citep*{Christie2010a,AGT2014a}. While these proposals seem to avoid many of the challenges
-that earlier proposals faced, they in fact have many of the problems that were discussed with respect
+that earlier proposals faced, they, in fact, have many of the problems that were discussed with respect
 to hypothetical extensions of non"=formal proposals in Construction Grammar. Fortunately, the LFG proposals are worked out in
 detail and are embedded in a formal theory that provides formalized analyses of the languages and
-phenomena under discussion. It is therefore possible to show what the new template-based theories
+phenomena under discussion. It is, therefore, possible to show what the new template-based theories
 predict and to pin down exactly the phenomena where they fail. 
 %% A fully worked out and implemented lexical analysis in the
 %% framework of HPSG exists but is not included into this book due to space limitations. The
@@ -434,7 +450,7 @@ sm edges
   %% I am criticizing here is an approach relying on configurations for phenomena that interact with
   %% valence change and extraction and other phenomena that distort phrasal configurations. 
 
-  The approach of \citew{AGT2014a} could be seen as a way to formalize phrasal constructional
+  The approach of \citet{AGT2014a} could be seen as a way to formalize phrasal constructional
   approaches like those by \citet{Goldberg95a,Goldberg2004a} and \citet{CJ2005a}. What I want to
   show in this book is that the phrasal LFG approach has
   too many drawbacks in comparison to the lexical approaches. Since the phrasal approach is rejected
@@ -449,13 +465,13 @@ Grammar. There are many versions of Construction Grammar. Most assume a phrasal 
 argument structure constructions
 \citep{Tomasello2003a,Goldberg95a,Goldberg2006a,GJ2004a,BC2005a,vanTrijp2011a}, but there are variants
 like Berkeley Construction Grammar \citep{Kay2005a} and Sign-Based Construction Grammar (SBCG)
-\citep{SBK2012a} that are explicitly lexical. See also \citew{Croft2003a} and \citew{Goldberg2013a}
-for discussions of lexical and phrasal constructional approaches. The proposal I work out in this
+\citep{SBK2012a} that are explicitly lexical. (See also \citew{Croft2003a} and \citew{Goldberg2013a}
+for discussions of lexical and phrasal constructional approaches.) The proposal I work out in this
 book in the framework of Constructional Head-Driven Phrase Structure Grammar (Constructional HPSG,
 \citealp{Sag97a}) is a lexical constructional proposal. It is equivalent to what would be done in
 SBCG, which comes with no big surprise since SBCG is a variant of HPSG \citep[486]{Sag2010b}.
 
-I also do not argue against the attachment of templates to c-structure rules. In fact it is good to
+I also do not argue against the attachment of templates to c-structure rules. In fact, it is good to
 have this possibility. Such annotated c-structure rules can be used to describe phrasal constructions in which no plausible head
 can be identified as for instance Jackendoff's N-P-N construction \citeyearpar{Jackendoff2008a}, which is exemplified in
 (\mex{1}):
@@ -464,7 +480,7 @@ student after student
 \z
 Since -- as Jackendoff argued in detail -- no element of this phrase can plausibly be seen as the head
 there is no element that could be seen as responsible for the internal structure of the
-phrase. Therefore there is no non-ad hoc lexical item to attach constraints to and attaching
+phrase. Therefore, there is no non-ad hoc lexical item to attach constraints to and attaching
 templates to a c-structure seems to be the only option.
 
 This book is structured as follows: Chapter~\ref{sec-template-approach} introduces the
@@ -478,9 +494,9 @@ I then go on to discuss possible
 treatments of passivization and point out that generalizations are missed language internally
 (Chapter~\ref{sec-missing-generalization-internal}).
 Chapter~\ref{sec-generalizations} examines how the analyses could be adapted to German and I argue
-that cross-linguistic generalizations are not captured in phrasal
+that cross"=linguistic generalizations are not captured in phrasal
 analyses. Chapter~\ref{sec-lexical-approach-hpsg} develops a lexical approach in the framework of
-HPSG, explains how cross-linguistic generalizations -- including generalizations regarding
+HPSG, explains how cross"=linguistic generalizations -- including generalizations regarding
 constituent structure -- can be captured and shows how restrictions on
 extraction and passivization can be captured in a lexical analysis. The book concludes in Chapter~\ref{sec-conclusions}.
 
@@ -575,14 +591,15 @@ level that is supposed to fulfill the function of the argument structure represe
 (\citealt{BZ90a}; \citealt[Chapter~14]{BATW2015a}).
 
 The authors follow a neo-Davidsonian approach, that is, verbs introduce a one-place predicate that
-takes an event as sole argument. Further argument roles can be added as also predicating of the
+takes an event as its sole argument. Further argument roles can be added as predicating of the same
 event. For instance, the meaning of \emph{Kim ate} in (\mex{0}) is represented as (\mex{1}), ignoring tense information.
 \ea
 $eat(e) \wedge agent(e) = kim$
 \z
-Agents and patients are introduced by the templates given in (\mex{1}):
+Agents and patients are introduced by \citegen[Section~6.2]{Findlay2016a-u} templates given in (\mex{1}):
 
 \eal
+\label{ex-templates-agent-patient-temp}
 \ex \label{ex:agent-temp} \templaten{Agent} {\tempeq}\\
   \begin{tabular}[t]{l}
     \template{Arg1} \\[.5ex]
@@ -603,7 +620,7 @@ Agents and patients are introduced by the templates given in (\mex{1}):
          \upsig}\\
      \end{tabular}
 \zl
-These templates call further templates called \templaten{Arg1} and \templaten{Arg2}, respectively
+These templates call further templates called \templaten{Arg1} and \templaten{Arg2}, respectively,
 and provide a meaning constructor that consists of a lambda expression (line two) and a
 glue expression (line three). The lambda expression in both templates is looking for a P. This P can only be
 combined with the lambda expression if it simultaneously provides the resource {[(\upsig
@@ -614,8 +631,9 @@ combined with the lambda expression if it simultaneously provides the resource {
 After the consumption of this resource the formula {(\upsig 
 \feat{arg$_1$}) \linimp\ (\upsig \feat{event}) \linimp\ \upsig} results. This formula states that an
 \feat{arg$_1$} has to be found. After combination with \feat{arg$_1$}, the resource (\upsig
-\feat{event}) \linimp\ \upsig can be consumed by a tense predicate resulting in \upsig. That is, we
-arrive at a complete semantic proof that has used all resources. The actual proof involving the templates above is given in Figure~\vref{fig:benefactive-do-proof} and will be discussed in more detail  below.
+\feat{event}) \linimp\ \upsig can be consumed by a tense predicate resulting in \upsigb. That is, we
+arrive at a complete semantic proof that has used all resources. The actual proof involving the
+templates in (\ref{ex-templates-agent-patient-temp}) is given in Figure~\vref{fig:benefactive-do-proof} and will be discussed in more detail  below.
 
 The templates \templaten{Arg1} and \templaten{Arg2} are defined as shown in (\mex{1}a) and
 (\mex{1}b), respectively. For completeness I also give the definitions of \templaten{Arg3} and \templaten{Arg4}.
@@ -637,7 +655,10 @@ The templates \templaten{Arg1} and \templaten{Arg2} are defined as shown in (\me
 The templates \templaten{Map} and \templaten{NoMap} are used in (\mex{0}) to either map the arguments to a
 disjunction of grammatical functions or to declare that they are not mapped to f-structure items at
 all. The disjunctions of grammatical functions correspond to disjunctions that are assumed in
-Lexical Mapping Theory and are given in (\mex{1}):
+Lexical Mapping Theory and are given in (\mex{1}):\footnote{%
+  \feat{plusr} is not used anywhere in this book, but it plays a role in the analysis of the passive
+  \parencites[\page 319]{Findlay2016a-u}[\page 78]{AGT2014a}.%
+}
 \eal
 % minusr, minuso, plusr, pluso
 \ex \feat{minusr} $\equiv$
@@ -682,9 +703,9 @@ If we expand the templates for \templaten{Arg1}, \templaten{Arg2}, and \template
       (\upsig \feat{arg$_3$})$_{{\sigma}^{-1}}$ $=$ $\varnothing$ \}
 
 \zl
-(\mex{0}a) says that either the $\sigma$ value of the \subj is \feat{arg}$_1$ or the $\sigma$ value
+(\mex{0}a) says that either the $\sigma$ value of the \subjlfg is \feat{arg}$_1$ or the $\sigma$ value
   of the \obltheta is \feat{arg}$_1$ or \feat{arg}$_1$ is not realized in the f-structure at all.
-(\mex{0}b) says that \feat{arg}$_2$ is mapped to \subj or \obj or to nothing at all and (\mex{0}c)
+(\mex{0}b) says that \feat{arg}$_2$ is mapped to \subjlfg or \obj or to nothing at all and (\mex{0}c)
   says that \feat{arg}$_3$ is mapped to \obj or \objtheta or to nothing at all.
 
 
@@ -739,7 +760,7 @@ With the template for \templaten{past} in place, we can now have a look at the l
 The specification of the \predv in (\mex{0}) is unusual for LFG. Usually \predvs come with a
 specification of grammatical functions that have to be realized together with a predicate. The \predv is
 the representation of valence information in LFG. This function is taken over by glue terms in
-proposals that use glue-semantics. Since glue-semantics is resource sensitive one can set things up
+proposals that use glue semantics. Since glue semantics is resource sensitive one can set things up
 in a way to make sure that all the grammatical functions that are required to fill semantic roles
 are realized in an utterance. 
 
@@ -791,12 +812,12 @@ The glue terms can be used in a proof as is shown in the box for \relation{draw}
 Figure~\vref{fig:benefactive-do-proof}. The proofs are basically lambda reductions with the
 additional condition that resources that are paired with the lambda expression (the material to the
 right of the colon) have to be used. So, for instance, when \template{patient} is combined with
-\textbf{drew} the resource (ev \linimp d) \linimp s \linimp ev \linimp d has to be used. Since
-\textbf{drew} provides ev \linimp d, the combination of the two items results in s \linimp ev
+\textit{drew}, the resource (ev \linimp d) \linimp s \linimp ev \linimp d has to be used. Since
+\textit{drew} provides ev \linimp d, the combination of the two items results in s \linimp ev
 \linimp d. In the next step an x:s is hypothesized, lambda reduction takes place and the resource
 s is consumed yielding  ev \linimp d. This expression is combined with
 \template{agent}. \template{agent} contains the glue term (ev \linimp d) \linimp k \linimp ev
-\linimp d and since \template{patient} + \textbf{drew} was ev \linimp d, a combination is possible
+\linimp d and since \template{patient} + \textit{drew} was ev \linimp d, a combination is possible
 and the result is k \linimp ev \linimp d. Now the x:s that was hypothesized earlier is reintroduced
 into the formula resulting in s \linimp k \linimp ev \linimp d.
 
@@ -857,7 +878,7 @@ resolved\label{page-disjunctions-gf-c-structure},
 %and in order to exclude the option of \argone, \argtwo and \argthree being mapped to $\varnothing$
 we need c-structure rules. In the case at hand we have the c-structure rule in (\ref{c-struc-vp-benefactive}) that
 licenses the objects and we have an IP rule that combines the VP with an NP/DP. This c-structure
-rule ensures that there is a \subj. Without these additional constraints from c-structure
+rule ensures that there is a \subjlfg. Without these additional constraints from c-structure
 configurations the approach would overgenerate. As I will show in Chapter~\ref{sec-active-passive} this is
 problematic since the assignment of grammatical functions in passives has to be taken care of by
 c"=structure rules that are specific to the benefactive construction, which results in missing
@@ -974,13 +995,13 @@ generalizations.\todostefan{ncline does not work properly in texlive 2017, only 
 \ncline{-}{d1}{d2}
 \end{figure}
 
-\subsection{Inheritance-based analyses: Why does it work and where are the limits}
+\subsection{Inheritance-based analyses: Why do they work and where are the limits}
 
 \citet{MuellerPersian} argued that semantics needs embedding and cannot be done in inheritance
 networks. For instance, it was suggested to do morphology by inheritance. As \citet{KN93a} show this
 fails for adjectives like \emph{undoable}. \emph{undoable} has two possible meanings that correspond
 to two bracketings: \emph{undo-able} and \emph{un-doable}. In the first reading the verb \emph{undo}
-is combined with \suffix{able}. The verbal meaning is embedded under a modal operator. In the second
+is combined with \suffix{able}; the verbal meaning is embedded under a modal operator. In the second
 reading the prefix \prefix{un} is attached to the adjective \emph{doable} and embeds the meaning
 of \emph{doable} under the negation. If semantic information is the value of a feature and if
 the properties of \emph{undoable} are inherited from \prefix{un}, \emph{do}, and \suffix{able}, we
@@ -1006,14 +1027,14 @@ a-structures for the transitive and the ditransitive use of \emph{cook}:
     \begin{tabular}{@{}llc@{~~}c@{~~}c@{~~}c@{}}
     a-structure:  & \emph{cook} & $\langle$ & agent  & patient & $\rangle$\\
                   &             &           & [$-$o] & [$-$r]\\\\
-    f-structure:  &             &           & \subj  & \obj\\
+    f-structure:  &             &           & \subjlfg  & \obj\\
     \end{tabular}
     \end{tabular}
 \ex Ditransitive:\\
     \begin{tabular}{@{}llc@{~~}c@{~~}c@{~~}c@{~~}c@{}}
     a-structure:  & \emph{cook-for} & $\langle$ & agent  & beneficiary & patient & $\rangle$\\
                   &                 &           & [$-$o] & [$-$r]      & [$+$o]\\\\
-    f-structure:  &                 &           & \subj  & \obj        & \objtheta\\
+    f-structure:  &                 &           & \subjlfg  & \obj        & \objtheta\\
     \end{tabular}
 \zl
 Lexical Mapping Theory makes sure that the arguments that are labeled with $-$o, $-$r and $+$o are
@@ -1030,7 +1051,7 @@ list. Rather than using an ordered representation like lists it assumes an s-str
 features can be added by simple unification. These features are not ordered. The feature names have
 numbers as part of the names but this is just mnemonic and if order effects are desired they have to
 be modeled elsewhere. \citet{AGT2014a} impose the order"=specific constraints in the glue part of their semantic expressions. For
-instance the \templaten{benefactive} template refers to \argtwo and \argthree and consumes
+instance, the \templaten{benefactive} template refers to \argtwo and \argthree and consumes
 respective resources in a specified order.
 %% \todostefan{MyP: Was sind die Beschränkungen von
 %%   \templaten{benefactive}? Was ist der Unterschied zwischen \emph{helfen} und \emph{unterstützen}?}
@@ -1062,7 +1083,7 @@ In order to avoid such conflicts auxiliary features and mappings
 between auxiliary features may be used \citep{Koenig99a}. The problem is that one auxiliary feature
 per interaction is needed \citep[Section~7.5.2.2]{MuellerLehrbuch1}.
 
-Assuming sets rather than lists would not work either if the general understanding of sets as is
+Assuming sets rather than lists would not work either, if the general understanding of sets as is
 common in HPSG \citep{PM90a} is assumed. What could be done is that one inherits constraints on list
 or set membership. The \templaten{agent} and \templaten{patient} templates would then have the
 following feature-value specification:
@@ -1078,9 +1099,9 @@ following feature-value specification:
          \feat{arg$_2$}) \linimp\ (\upsig \feat{event}) \linimp\
          \upsig} $\in$ \ibox{1}
 \zl
-So one would say that the value of \textsc{sem} is a set \iboxb{1} and that the meaning constructor for agent
-is an element of this set and that the meaning constructor for patient is an element of this set
-too. Note that the set is not constrained otherwise. So in principle any formula could be part of
+So one would say that the value of \textsc{sem} is a set \iboxb{1} and that the meaning constructor for \textsc{agent}
+is an element of this set and that the meaning constructor for \textsc{patient} is an element of this set
+too. Note that the set is not constrained otherwise, in principle any formula could be part of
 this set. So one would need the additional assumption that we are looking for minimal models when we
 interpret linguistic structures, an assumption that is usually made in LFG.
 
@@ -1092,11 +1113,11 @@ interpret linguistic structures, an assumption that is usually made in LFG.
 %%   meaning constructors in Asudeh et. al.'s system can be understood similarly.
 %% }
 
-In general such a system of semantics construction would not work since it would not be clear in
+In general, such a system of semantics construction would not work since it would not be clear in
 which order partial formulae that are inherited from supertypes are to
 be combined. Authors have used
 semantic types in order to make it clear what type of argument has to be combined with a certain
-functor (\eg in GPSG, \citealt[Chapter~9--10]{GKPS85a}), but this does not help in all cases. The glue approach has
+functor (\eg in GPSG, \citealt[Chapters~9--10]{GKPS85a}), but this does not help in all cases. The glue approach has
 additional means to specify what is combined with what: specific resources are used when elements are
 combined. So, while the lambda expressions for the agent and the patient template in (\mex{0}) are
 identical, the glue resources are not. The \templaten{agent} template involves an \argone and the \templaten{patient}
@@ -1108,16 +1129,17 @@ Part of the \templaten{benefactive} template that remaps \argtwo to \argthree:\\
 (\upsig \feat{arg$_2$}) \linimp (\upsig \feat{arg$_3$}) \linimp {}[(\upsig \feat{arg$_2$}) \linimp (\upsig \feat{event}) \linimp \Upsig]
 \z
 This basically turns a two-place verb selecting for an object (\argtwo) into a three-place verb that
-has a new first object (\argtwo) and realizes the object of the two-place verb as its second object (\argthree). The glue-term basically does what a lexical rule does in
+has a new first object (\argtwo) and realizes the object of the two-place verb as its second object
+(\argthree). The glue term basically does what a lexical rule does in
 lexical rule-based systems, it maps a two-place predicate to a three-place predicate:
 \ea
 \sliste{ \feat{arg$_x$}, \feat{arg$_y$} } $\mapsto$ \sliste{ \feat{arg$_x$}, \feat{arg$_z$}, \feat{arg$_y$} }
 \z
-So a lexical item with several glue-constraints attached to it corresponds to a lexical item with
+So a lexical item with several glue constraints attached to it corresponds to a lexical item with
 several lexical rules attached to it (for later application). The resource sensitivity of the glue statements ensures that
 the glue statements are used in a specific order in the proofs. Similarly the input and output
 conditions of lexical rules make sure that they are applied in a certain order.\footnote{%
-See for instance \citew[\page 515]{Blevins2003a} for the application of the impersonal lexical rule to the output of the
+See, for instance, \citew[\page 515]{Blevins2003a} for the application of the impersonal lexical rule to the output of the
 passivization lexical rule. The output of the impersonal lexical rule cannot function as input to
 passivization since passivization requires a subject to be suppressed and the subject was already
 suppressed by the impersonalization.}
@@ -1129,7 +1151,7 @@ suppressed by the impersonalization.}
 %% arguments have to be mapped onto grammatical functions to ensure correct positioning in c-structures
 %% and correct case assignment. The grammatical functions for \argone, \argtwo and \argthree are specified disjunctively as is shown in
 %% (\ref{ex-arg1-arg2-arg3}). This basically leaves room for all arguments to move up one step: the
-%% subject can be dropped in the passive, the \obj can be realized as \subj, and the \objtheta can
+%% subject can be dropped in the passive, the \obj can be realized as \subjlfg, and the \objtheta can
 %% be realized as \obj. This works well for the normal passive in English, for which \citet{AGT2014a}
 %% assume the following template:
 %% \eas
@@ -1284,7 +1306,7 @@ suppressed by the impersonalization.}
 
 \section{Resultative constructions}
 
-\citet{Christie2010a} assumes the following c-structure rule for transitive resultative
+\citet{Christie2010a} assumes the c-structure rule in (\mex{2}) for transitive resultative
 constructions like the one in (\mex{1}):
 \ea
 He hammered the metal flat.
@@ -1294,7 +1316,7 @@ He hammered the metal flat.
 \phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down}
 \rulenode{DP\\*(\up\ \obj) = \down}
-\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subj) = (\up \obj)\\*\hspace{-3em}@RESULT-T((\up PRED FN)) }\hspace{-2ex}
+\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up \obj)\\*\hspace{-3em}@RESULT-T((\up PRED FN)) }\hspace{-2ex}
 }
 \z
 The resultative template licenses the result predicate and provides a glue semantics term that
@@ -1318,30 +1340,36 @@ information is replaced by the information contributed by the resultative templa
 that all sentences must have a specified \predv and therefore the optional \predv must be realized
 in simple sentences without a result predicate.  
 
-Christie does not explain how resultatives with intransitive verbs as in (\ref{ex-runshoes-threadbare}) are analyzed but by analogy there
+Christie does not explain how resultatives with intransitive verbs as in
+(\ref{ex-runshoes-threadbare}), repeated here as (\mex{1}) for convenience, are analyzed but by analogy there
 would be lexical items for intransitive verbs with an optional meaning contribution and a
 resultative template which integrates the meaning of the result predicate with the meaning of the
-intransitive verb and which licenses an additional object argument.
+intransitive verb, and which licenses an additional object argument.
+\ea
+\label{ex-runshoes-threadbare-two}
+He runs his sneakers threadbare.
+\z
+
 
 The previous subsections introduced the phrasal template-based analyses of benefactive constructions
 and resultative constructions by \citet{AGT2014a} and \citet{Christie2010a}. In what follows I will
 explain the problematic aspects. I start with a section that shows that neither the resultative
 construction nor the benefactive construction is fixed in its form. The data challenges Toivonen's
-motivations for a phrasal construction \citep{Toivonen2013a}
+motivations for a phrasal construction \citep{Toivonen2013a}.
 
 \chapter{The flexibility of the constructions}
 \label{sec-flexibility}
 
-\citet{Christie2010a} and \citet{Toivonen2013a} and \citet{AGT2014a} suggest phrasal constructions
+\citet{Christie2010a}, \citet{Toivonen2013a} and \citet{AGT2014a} suggest phrasal constructions
 for resultative and benefactive constructions with a fixed number of daughters on the right-hand
-side of the c"=structure rule. \citet{Christie2010a} suggested the following c"=structure rule for the introduction of the result
+side of the c"=structure rule. \citet{Christie2010a} proposes the following c"=structure rule for the introduction of the result
 predicate and its subject:
 \ea
 \label{c-structure-resultative-christie}
 \phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down}
 \rulenode{DP\\*(\up\ \obj) = \down}
-\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subj) = (\up \obj)\\*\hspace{-3em}@RESULT-T((\up PRED FN)) }\hspace{-2ex}
+\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up \obj)\\*\hspace{-3em}@RESULT-T((\up PRED FN)) }\hspace{-2ex}
 }
 \z
 In Christie's analysis, verbs are assumed to only optionally provide semantic and f-structure
@@ -1355,13 +1383,13 @@ The performer sang the children a song.
 \z
 \ea\label{c-struc-vp-benefactive-two}
 \oneline{\phraserule{V$'$}{
-\rulenode{V\\* \up~=~\down\\*( @\textsc{Benefactive} )}
+\rulenode{V\\* \up~=~\down\\*( @\textsc{benefactive} )}
 \rulenode{DP\\*(\up\ \obj) = \down}
 \rulenode{DP\\*(\up\ \objtheta) = \down}
 }}
 \z
-According to the authors, the noun phrase \emph{the children} is not an argument of \emph{sing} but
-contributed by the c"=structure rule that optionally licenses a benefactive \citep[\page 81]{AGT2014a}.
+According to the \citet[\page 81]{AGT2014a}, the noun phrase \emph{the children} is not an argument
+of \emph{sing} but is contributed by the c"=structure rule that optionally licenses a benefactive.
 
 As will be shown in the following, neither the resultative construction nor the benefactive
 construction is fixed in this form. Let us look at resultatives first. \citet[\page 185]{CR92a} discuss
@@ -1377,23 +1405,23 @@ Which colors do you wonder which shirts to dye?
 %% Which sizes do you wonder which logs to cut?
 %% }
 \zl
-These examples show that both the result phrase and the object can be extracted. The examples in
-(\mex{1}) show that the objects can be extracted with the result predicate remaining in the V$'$:
+These examples show that it is possible to extract both the result phrase and the object. As we see
+in the examples in (\mex{1}), the objects can be extracted with the result predicate remaining in the V$'$:
 \eal
 \ex[]{
-I wonder which gems to polish shiny?
+I wonder which gems to polish shiny.
 }
 \ex[]{
-I wonder which shirts to dye that color?
+I wonder which shirts to dye that color.
 }
 \zl
 It is also possible to extract the result predicate and leave the object in place:
 \eal
 \ex[]{
-I wonder how shiny to polish the gems?
+I wonder how shiny to polish the gems.
 }
 \ex[]{
-I wonder which color to dye the shirts?
+I wonder which color to dye the shirts.
 }
 \zl
 Apart from extraction, passivization is possible as well:
@@ -1439,18 +1467,26 @@ The examples show that some speakers permit the promotion of the benefactive to 
 %% there is no intervening material between the benefactive and the VP from which it is extracted. See
 %% \citew{Gibson98a} on integration costs. 
 
-While the extraction of the benefactive is out (\ref{ex-which-teacher-toivonen}), (\mex{1}) shows that the secondary object in
-a benefactive construction can be extracted.
+While the extraction of the benefactive is out as (\ref{ex-which-teacher-toivonen}), repeated here
+as (\mex{1}a), shows, the examples in (\mex{1}b,c) show that the secondary object in a benefactive construction can be extracted.
 \eal
 \label{ex-extraction-secondary-object}
-\ex What kind of picture did the kids draw the teacher? 
-\ex the picture that the kids drew the teacher 
+\ex[*]{
+\label{ex-which-teacher-toivonen-two}
+Which teacher did the kids draw a picture?
+}
+\ex[]{
+What kind of picture did the kids draw the teacher? 
+}
+\ex[]{
+the picture that the kids drew the teacher 
+}
 %What type of cake did Peter prepare the children? 
 % I wonder what kind of meal to prepare the teacher. Hudson: OK
 \zl
 The benefactives seem to pattern with normal ditransitives here. For an overview citing several
-other sources see \citealp[\page 258]{Hudson92a-u}. Hudson reports that the extraction of the primary object of normal ditransitives is also
-judged as marked or even ungrammatical by many authors and subjects:
+other sources see \citew[\page 258]{Hudson92a-u}. Hudson reports that the extraction of the primary object of normal ditransitives is also
+judged as marked or even ungrammatical by many authors and informants:
 % Larson88, Ziv & Sheintuch, 1979, 
 % Fodor: viele ungrammatisch, mache markiert
 % Brass & Lasnik und Jackendoff finden die OK.
@@ -1473,8 +1509,8 @@ in a rule is optional and the place in the f"=structure is filled via functional
 (\ref{ex-resultative-just-verb-remains}) and (\ref{ex-benefactive-just-verb}), we have a situation
 in which it is just the verb that remains in the VP. All other elements are either promoted to
 grammatical functions that are realized outside of the VP or they 
-are extracted. This means that nothing of the original configuration is left, it is just the
-verb. Christie's analysis of the resultative would be in deep trouble since she assumed that the
+are extracted. Thus nothing is left of the original configuration, it is just the
+verb. \citegen{Christie2010a} analysis of the resultative would be in deep trouble since she assumed that the
 resultative template is optionally introduced at the result predicate and overwrites optional information coming
 from the verb. As is clear from looking at the examples in (\ref{ex-resultative-just-verb-remains}),
 attaching the constraint to the extracted result predicate would be inappropriate since the result
@@ -1493,36 +1529,41 @@ Christie's proposal since the structure would remain the same with some argument
     contexts and be fronted. Although technically possible, I consider it inappropriate to state at the
     SpecCP node any information about the internal structure of subconstituents from which the
     extraction took place. For certain types of resultative constructions, a resultative template in fronted position would license an additional
-    object and result predicate in an embedded V$'$. Note also that authors who assume a phrasal resultative construction probably
-    would also want to assume other phrasal constructions as well. If these allow extraction of crucial
+    object and result predicate in an embedded V$'$. Note also that authors who assume a phrasal
+    resultative construction would probably also want to assume other phrasal constructions as well. If these allow extraction of crucial
     parts the respective annotations at SpecCP would be necessary. The generalization about extraction
     would be missed. (See also the discussion of Figure~\ref{fig-case-gf-benefactive} below.)
 
-    In addition the lexical approach assumes one place where the resultative predicate is licensed: the
+    In addition, the lexical approach assumes one place where the resultative predicate is licensed: the
     lexical rule. The phrasal approach would assume at least two (unrelated) places. On Occamian grounds
-    the lexical analysis has to be preferred. 
+    the lexical analysis is to be preferred. 
 }
 
 The situation with the benefactive construction is similar: in (\ref{ex-benefactive-just-verb}) we
 have a bare verb and all other items are promoted or extracted. The template is associated with the
-verb. One could either insist on the phrasal pattern in (\ref{c-struc-vp-benefactive}) and assume an
+verb. One could either insist on the phrasal pattern in (\ref{c-struc-vp-benefactive}) and posit an
 additional rule for the passive (see Chapter~\ref{sec-missing-generalization-internal}) and a trace
 for extraction or assume that constituents are optional and that rules like
 (\ref{c-struc-vp-benefactive}) can be used to account for all examples in
-(\ref{ex-prepare-benefactive}). If one follows the latter proposal, the c"=structure is not really
+(\ref{ex-prepare-benefactive}). Under the latter proposal, the c"=structure is not really
 restrictive. In the analysis of (\ref{ex-benefactive-just-verb}) only the verb is present and
 one therefore could assume a lexical approach in which the benefactive template is associated with
 the verb right away. (See the discussion of (\ref{ex-coordination-benefactive}), which suggests that there is an advantage for
 the lexical proposal.)
 
-\citet[\page 81]{AGT2014a} state that \emph{The call to \templaten{benefactive} is optional, such
-that the double-object rule is general and can also apply to non-benefactive cases.} If
+\citet[\page 81]{AGT2014a} state that ``The call to \templaten{benefactive} is optional, such
+that the double-object rule is general and can also apply to non-benefactive cases.'' If
 passivization and extraction are treated by declaring arguments to be optional, this also has to be
 reflected in the phrase structure rule in (\ref{c-struc-vp-benefactive}). The rule has to account
 for both verbs with a benefactive argument and normal ditransitive verbs.
 If the rule in (\ref{c-struc-vp-benefactive}) is supposed to rule out passives like
-(\ref{ex-my-sister-was-carved}) the benefactive NP has to be obligatory. However, this would also rule out
-passives of normal ditransitives like (\mex{1}).
+(\ref{ex-my-sister-was-carved}), repeated here as (\mex{1}) for convenience, the benefactive NP has to be obligatory. 
+\ea[*]{
+\label{ex-my-sister-was-carved-two}
+My sister was carved a soap statue of Bugs Bunny (by a famous sculptor).
+}
+\z
+However, this would also rule out passives of normal ditransitives like (\mex{1}).
 \ea[]{
 \label{ex-my-sister-was-given}
 My sister was given a soap statue of Bugs Bunny (by a famous sculptor).
@@ -1546,7 +1587,7 @@ with normal ditransitive verbs.\footnote{%
 \rulenode{DP\\*(\up\ \objtheta) = \down}
 }}
 \z
-Since the benefactive template is not mentioned at this rule, no benefactive argument would be
+Since the benefactive template is not mentioned in this rule, no benefactive argument would be
 licensed in the respective configuration. \citet*{BATW2015a} state that \objtheta is the grammatical
 function for secondary objects. Hence, a rule like (i) is a special rule with a missing primary
 object. The only purpose (i) would serve in a grammar of English would be to account for the passive
@@ -1585,9 +1626,8 @@ interaction of morphology and the constructions under consideration.
 %\section{Morphology and Valence}
 
 Morphological processes have to be able to see the valence of the element they apply to (this point
-was also made by \citew[Section~4.2]{MWArgSt} in connection with the
-GPSG representation of valence.). For instance, the generalization
-about productive \suffix{bar} `able' derivation in German is that it only applies to
+was also made by \citew[Section~4.2]{MWArgSt} in connection with the GPSG representation of
+valence). For instance, the generalization about productive \suffix{bar} `able' derivation in German is that it only applies to
 verbs that govern a subject and an accusative object. While \emph{lösbar} `solvable' and
 \emph{ver\-gleich\-bar} `comparable' can be formed, \noword{schlafbar} `sleepable' and \noword{helfbar} `helpable' are ruled out:
 \eal
@@ -1610,15 +1650,15 @@ verbs that govern a subject and an accusative object. While \emph{lösbar} `solv
 }
 \zl
 The resultative construction also interacts with \bard: the adjectives \emph{leerfischbar}
-`empty.fish.able' = `It is possible to fish X empty.' and \emph{plattfahrbar}\footnote{%
+`empty.fish.able' = `It is possible to fish X empty.' and \emph{platt\-fahr\-bar}\footnote{%
   \url{http://www.forum-3dcenter.org/vbulletin/archive/index.php/t-236032.htmls}, 02.06.2016.
 } `flat.drive.able' can be formed. If arguments are introduced by phrasal configurations which refer to
 fully derived and inflected words or phrases consisting of words, the
 accessibility of the valence information to the morphology component is not given and it remains an
 open question how phrasal analyses can explain the contrasts in (\mex{0}) and the fact that
-\bard does apply to verbs in the resultative construction. In Christie's analysis the intransitive
-verbs probably would be represented as intransitive in the lexicon with an optional semantic
-representation. As was argued in \citew{Mueller2003b} the derivational affix attaches to the verbal
+\bard does apply to verbs in the resultative construction. In \citegen{Christie2010a} analysis, the intransitive
+verbs probably would\todostefan{or \emph{would probably}?} be represented as intransitive in the lexicon with an optional semantic
+representation. As was argued in \citew{Mueller2003b}, the derivational affix attaches to the verbal
 stem and hence the information about an accusative object would not be available in Christie's
 approach. Even if one assumes that \emph{leer} and \emph{fisch} are combined before the attachment
 of \suffix{bar}, it is unclear what licenses this combination. The fact that \emph{leerfisch} takes
@@ -1665,9 +1705,10 @@ but if one wants to maintain the view that words are the atoms of syntax \citep[
 evidence against Alsina's and Chris\-tie's phrasal approach (as a general approach that also holds
 for German). 
 
-Another example of derivational morphology that clearly shows that the fact that there will be an
-accusative object has to be present at the verb is the derivation of adjectival
-participles.
+Another example of derivational morphology showing that information about valence is needed at the
+word level is the derivation of adjectival participles: this derivation is only possible if the verb
+requires an accusative object. So, when the adjectival participle is derived, this information has
+to be accessible.
 %% \footnote{%
 %%   This only follows if one believes that affixes do not combine with phrases but with stems, an
 %%   assumption commonly made in LFG (\citealp{BM95a}, see also footnote~\ref{fn-lexical-integrity}).
@@ -1692,7 +1733,7 @@ in the active. (\mex{1}) shows an example:
      the danced    shoes\\
 }
 \zl
-The shoes are not a semantic argument of \emph{tanzt}. Nevertheless the referent of the NP that is realized as
+The shoes are not a semantic argument of \emph{tanzt}. Nevertheless, the referent of the NP that is realized as
 accusative NP in (\mex{0}a) is the element the adjectival participle in (\mex{0}b) predicates
 over. Adjectival participles like the one in (\mex{0}b) are derived from a passive participle of a
 verb that governs an accusative object. The example in (\mex{0}c) shows that the passive participle cannot
@@ -1720,11 +1761,11 @@ The conclusion, which was drawn in the late 70s and early 80s by \citet[\page 41
 and \citet[\page 21]{Bresnan82a}, is that phenomena that feed morphology should be treated
 lexically. The natural analysis in frameworks like HPSG, CG, CxG, and LFG is therefore a lexical
 one, for example one that assumes a lexical rule for the licensing of resultative constructions. See
-\citew{Verspoor97a}, \citew{Wechsler97a}, \citew{WN2001a}, Wunderlich \citeyear[\page
-  45]{Wunderlich92a-u-kopiert}; \citeyear[\page 120--126]{Wunderlich97c}, \citew{KW98a},
+\citew{Verspoor97a}, \citew{Wechsler97a}, \citew{WN2001a}, Wunderlich (\citeyear[\page
+  45]{Wunderlich92a-u-kopiert}; \citeyear[\page 120--126]{Wunderlich97c}), \citew{KW98a},
  \citew[Chapter~5]{Mueller2002b}, 
 %\citew{Kay2005a}, das ist Dativ
-\citew{Simpson83a} and \citet{Christie2015a-u} for lexical proposals in some of  these frameworks. 
+\citew{Simpson83a} and \citew{Christie2015a-u} for lexical proposals in some of  these frameworks. 
 
 
 %\section{Lexical Integrity in recent LFG publications}
@@ -1919,14 +1960,14 @@ one, for example one that assumes a lexical rule for the licensing of resultativ
 
 I now turn to active/passive alternations and point out that the phrasal approach is missing generalizations.
 
-\chapter{Missing Generalizations: Active passive alternations}
+\chapter{Missing generalizations: Active passive alternations}
 \label{sec-missing-generalization-internal}
 \label{sec-active-passive}
 
 
 %% They could assume allo-constructions and make both c"=structures inherit from the same super construction.
 %%
-In this section, I want to show that Asudeh, Giorgolo \& Toivonen's approach to the phrasal introduction
+In this section, I want to show that \citeauthor*{AGT2014a}'s \citeyearpar{AGT2014a} approach to the phrasal introduction
 of benefactives either does not need to be stated at the phrasal level since the phrasal
 construction does not contribute relevant information or that the approach misses generalizations
 regarding the configurations for active and passive.
@@ -1974,7 +2015,7 @@ The children were laughed.
 }
 \zl
 The benefactive template would account for the ungrammaticality of (\mex{0}) since it requires an
-\argtwo to be present, but it would admit the sentences in (\mex{1}b--c) since \emph{give} with
+\argtwo to be present, but it would admit the sentences in (\mex{1}b,c) since \emph{give} with
 prepositional object has an \argtwo \citep[\page 317]{Kibort2008a}.
 \eal
 \ex[]{
@@ -2064,10 +2105,10 @@ play a minor role: the account mainly relies on semantics and resource sensitivi
 piece of information that is contributed by the c-structure rule: it constrains the grammatical
 functions of \argtwo and \argthree, which are underspecified in the template definitions for \argtwo
 and \argthree (see the discussion on page~\pageref{page-disjunctions-gf-c-structure}). \argtwo can
-be realized as \subj or as \obj. In the active case \argone will be the \subj and because of function argument bi-uniqueness \citep[\page 334]{BATW2015a} no other element can be the \subj and hence \argtwo has to
+be realized as \subjlfg or as \obj. In the active case \argone will be the \subjlfg and because of function argument bi-uniqueness \citep[\page 334]{BATW2015a} no other element can be the \subjlfg and hence \argtwo has to
 be an \obj. \argthree can be either an \obj or an \objtheta. Since \argtwo is an \obj in the active,
 \argthree has to be an \objtheta in the active. In the passive case \argone is suppressed or
-realized as \obltheta (\emph{by} PP). \argtwo will be realized as \subj (since English requires a \subj to be realized) and \argthree could be realized as either
+realized as \obltheta (\emph{by} PP). \argtwo will be realized as \subjlfg (since English requires a \subjlfg to be realized) and \argthree could be realized as either
 \obj or \objtheta. This is not constrained by the template specifications so far. Because of the
 optionality in (\ref{c-struc-vp-benefactive-optional-args}), either the \obj or the \objtheta
 function could be chosen for \argthree. This means that either Lexical Mapping Theory has to be
@@ -2195,7 +2236,7 @@ coordinating items with strong restrictions with items with weaker restrictions,
 coordination structure that is at least as restrictive as the items that are coordinated. One does
 not get less restrictive by coordinating items.
 
-The next section deals with German and explains in detail why cross-linguistic generalizations are not
+The next section deals with German and explains in detail why cross"=linguistic generalizations are not
 captured in the phrasal approach, but I want to mention two phenomena here since they are relevant
 to the point of missing language internal generalizations. As was shown in \citew[Section~5]{Mueller2006d}, there is interaction between the resultative construction and nominalizations, which
 cannot be captured by inheritance. Similarly there are prenominal adjectival phrases in German that
@@ -2303,7 +2344,7 @@ The c"=structure rule for VP-argument combinations is provided in (\mex{1}):
 \ea
 \label{lfg-vp-regel-two}
 \phraserule{VP}{
-\rulenode{DP\\* (\upsp \subj|\obj|\objtheta) = \down}
+\rulenode{DP\\* (\upsp \subjlfg|\obj|\objtheta) = \down}
 \rulenode{VP\\* \up~=~\down}}
 \z
 The dependent elements contribute to the f"=structure of the verb and coherence/""completeness ensure that all
@@ -2312,12 +2353,12 @@ the VP node of the right-hand side of the rule as in (\mex{1}):
 \ea
 \label{lfg-vp-regel-three}
 \phraserule{VP}{
-\rulenode{DP\\* (\upsp \subj|\obj|\objtheta) = \down}
+\rulenode{DP\\* (\upsp \subjlfg|\obj|\objtheta) = \down}
 \rulenode{VP\\* \up~=~\down\\*( @\textsc{Benefactive} )}}
 \z
 However, since the verb-final variant of
 (\ref{ex-er-buk-ihr-einen-kuchen}) would have the structure in (\mex{1}), one would get spurious
-ambiguities, since the benefactive could be introduced at any of the three VP nodes in (\mex{1}),
+ambiguities: since the benefactive could be introduced at any of the three VP nodes in (\mex{1}),
 one would get three analyses with exactly the same semantics.
 \ea
 \label{ex-er-ihr-einen-kuchen-buk}
@@ -2325,7 +2366,7 @@ one would get three analyses with exactly the same semantics.
      because {}        he.\nom{} {}        her.\dat{} {}        a.\acc{} cake       {}        {}       baked\\
 \z
 So the only way to avoid this seems to be to introduce the benefactive at the rule that got the recursion
-going, namely the rule in (\mex{1}), that projects the lexical verb to the VP level.
+going, namely the rule in (\mex{1}), which projects the lexical verb to the VP level.
 \ea
 \label{LFG-v-vp-two}
 \phraserule{VP}{
@@ -2339,7 +2380,7 @@ But this unary branching rule is almost a lexical rule.
 Note that there is a further problem for the template-based approach. The traceless approach to the
 verb position in German developed by \citet{Berman2003a} assumes that the verb is optional in
 (\mex{0}). The optionality is marked by enclosing the V in brackets. Because of the optionality, there is nothing to attach the benefactive template to. Even if one would change
-the notational schema of LFG and allow for the attachment of f-structure constraints to mother nodes
+the notational schema of LFG and allow for the attachment of f-structure constraints to mother nodes,
 this would not solve the problem since a principle that is called Economy of Expression
 (\citealt[\page 81]{Bresnan2001a}; \citealt*[\page 90]{BATW2015a}) removes/avoids nodes without
 daughters.\footnote{%
@@ -2379,7 +2420,7 @@ sm edges
 benefactive template}\label{fig-berman-clause-v1}
 \end{figure}  
 There is no verbal node to which one can attach the benefactive template and introducing it at the C
-node seems counter-intuitive. The natural place for it to be introduced is the verb though since it
+node seems counter-intuitive. The natural place for it to be introduced is the verb since it
 has to be realized somewhere in the sentence. This is of course the lexical approach. Of course one
 could insist on introducing constraints regarding a benefactive argument at the projection in
 (\ref{LFG-v-vp-two}). For instance, one could assume that the V is optional and that the annotation
@@ -2404,7 +2445,7 @@ sm edges
 [CP,fit=tight
   [\cnull [weil;because]]
   [VP
-    [{\begin{tabular}[t]{@{}c@{}}(\down \textsc{case} = nom) $\Rightarrow$ (\up \subj = \down)\\DP\end{tabular}} [der Vater;the father]]
+    [{\begin{tabular}[t]{@{}c@{}}(\down \textsc{case} = nom) $\Rightarrow$ (\up \subjlfg = \down)\\DP\end{tabular}} [der Vater;the father]]
     [VP
        [{\begin{tabular}[t]{@{}c@{}}(\down \textsc{case} = acc) $\Rightarrow$ (\up \obj = \down)\\DP\end{tabular}} [den Jungen;the boy]]
        [VP [V [lobt;praises]]]]]]
@@ -2416,7 +2457,7 @@ grammatical functions. In the case at hand the presence of a dative could be use
 grammatical function of a benefactive argument and hence find a natural place for the attachment of
 the benefactive template. However, the situation is not as simple as it first
 may appear. In examples like (\mex{1}a) we have a so-called dative passive. The dative object is
-promoted to subject and hence gets nominative. When verbal projections are embedded under AcI verbs,
+promoted to subject and hence gets nominative case. When verbal projections are embedded under AcI verbs,
 their subject is realized as accusative. (\mex{1}b) shows an example of the embedding of the
 benefactive construction under an AcI verb in which the benefactive argument is realized as
 accusative. Finally, the nominalization in (\mex{1}c) shows that the benefactive argument can be
@@ -2444,18 +2485,18 @@ argument has to be realized as nominative in dative-passive constructions like (
 \citew[Section~3.2.3]{Mueller2002b} for details of an auxiliary-based approach in HPSG). When
 dative"=passives are embedded under AcI verbs, the subject becomes the object of the AcI verb and
 hence receives accusative. And finally, arguments with structural case that are realized in nominal
-environments get genitive as in (\mex{0}c). Nothing special has to be stipulated in the lexical
+environments get genitive, as in (\mex{0}c)\todostefan{like in ...?}. Nothing special has to be stipulated in the lexical
 approach.
 A phrasal approach that wants to assign semantic roles based on dative case is lost though.
 
-Note also that the dative can be fronted over clause boundaries:
+Note also that the dative can be fronted across clause boundaries:
 \ea
 \label{ex-dieser-frau-hat-er-behauptet}
 \gll Dieser Frau hat er behauptet, nie einen Kuchen zu backen.\\
      this.\dat{} woman has he.\nom{} claimed     never a.\acc{} cake to bake\\
 \glt `He claimed that he never bakes this woman a cake.'
 \z
-A simple model that adds an \objtheta to the f-structure in which a dative appears would fail here since
+A simple model that adds an \objtheta to the f-structure in which a dative appears would fail here, since
 the \obj belongs into the f-structure of \emph{backen} rather than into the f-structure of
 \emph{behauptet}. This is due to the fact that the benefactive is extracted and not realized within
 the VP with the appropriate f-structure (\emph{nie einen Kuchen zu backen} `never a cake to
@@ -2485,17 +2526,18 @@ means that benefactive arguments have to ``know'' where they could come from. Th
 consequence since the treatment of nonlocal dependencies should be independent of the benefactive construction.
 
 The examples in (\ref{ex-benefactive-in-differentcases}) show that the benefactive argument, which is realized as \objtheta in
-active sentences can be realized as \subj (\mex{0}a) or as \obj (\mex{0}b). This
-means that one cannot assume a c-structure rule that combines a \objtheta DP with a verb and
+active sentences can be realized as \subjlfg (\mex{0}a) or as \obj (\mex{0}b). This
+means that one cannot assume a c-structure rule that combines an \objtheta DP with a verb and
 (optionally) attach the benefactive template to this DP. Rather one has to say that subjects, objects and secondary
 objects may be benefactive arguments. This means that one could assume that the benefactive template
 is optionally associated with the DP in the c-structure rule in (\ref{lfg-vp-regel-three}), but this
-would result in the same spurious ambiguities as results from an attachment to the VP node. 
+would result in the same spurious ambiguities that result from an attachment to the VP node. 
 
 
 \subsection{Flat structures}
 
-A reviewer of HeadLex2016 suggested that flat structures could be assumed for German as well. The
+A reviewer of Joint 2016 Conference on Head-driven Phrase Structure Grammar and Lexical Functional
+Grammar (HeadLex2016) suggested that flat structures could be assumed for German as well. The
 first problem with this is that most authors working in HPSG and LFG follow \citet{Haider93a}
 in assuming that there is no IP/VP separation in German. For finite verbs it is assumed that
 subjects are realized in the verbal domain just like other arguments are (\citealp[Section~3.2.2, Section~3.2.3]{Berman2003a}; \citealp[\page 412]{ZK2002a}). So for German one would
@@ -2541,7 +2583,7 @@ look as in (\mex{1}):\footnote{%
 \ea\label{c-struc-vp-benefactive-resultative-optional-args-adjuncts}
 \resizebox{.99\linewidth}{!}{%
 \begin{tabular}[t]{@{}l@{~}l@{}}
-{V$'$} $\to$ & \rulenode{XP*\\*\down\kern .2em $\in$ (\up\ \adj)} \rulenode{(DP)\\*(\up\ \subj) =
+{V$'$} $\to$ & \rulenode{XP*\\*\down\kern .2em $\in$ (\up\ \adj)} \rulenode{(DP)\\*(\up\ \subjlfg) =
   \down} \rulenode{XP*\\*\down\kern .2em $\in$ (\up\ \adj)} \rulenode{(DP)\\*(\up\ \obj) = \down}\\[10mm]
              &  \rulenode{XP*\\*\down\kern .2em $\in$  (\up\ \adj)} \rulenode{(DP)\\*(\up\ \objtheta) = \down} \rulenode{XP*\\*\down\kern .2em $\in$ (\up\ \adj)}
 \rulenode{(V)\\* \up~=~\down\\*( @\textsc{Benefactive} )}
@@ -2549,8 +2591,8 @@ look as in (\mex{1}):\footnote{%
 \z
 The `*' stands for arbitrarily many repetitions. While this rule works for German, it is
 inappropriate for English. One could say that English has a more specific version of this rule,
-namely a rule in which the number of possible adjuncts is specified to be zero. This would beg the
-question though how the more general rule could play a role in the grammar of English. One would have to
+namely a rule in which the number of possible adjuncts is specified to be zero. However, this would beg the
+question how the more general rule could play a role in the grammar of English. One would have to
 stipulate that the language acquisition process somehow involves rules like (\mex{0}) but the
 English speaking children have to find out that they cannot use adjuncts in the respective
 slots. This is implausible if one does not want to assume that rules like (\mex{0}) are innate and
@@ -2712,7 +2754,7 @@ configurations license the introduction of specific arguments.
 Note that the benefactive template cannot be attached to the VP node or to the dative DP. The benefactive template
 would add arguments to the $\sigma$-structure of \emph{wird} since \emph{backen} is embedded under
 \emph{wird} and \emph{müssen}. \emph{wird} introduces a tense relation and \emph{müssen} a modal
-operator. Depending on the analysis of the semantic structure the \argtwo and \argthree referred to
+operator. Depending on the analysis of the semantic structure, the \argtwo and \argthree referred to
 in the \templaten{benefactive} template would end up in the $\sigma$ structure of \emph{wird} or
 \emph{müssen} rather than in the $\sigma$ structure of \emph{backen}.\footnote{%
   This is not a problem for grammatical functions in f-structures  since raising predicates are assumed to have
@@ -2731,7 +2773,7 @@ Such sentences can be accounted for easily if one assumes that \emph{wird backen
 \emph{hat backen sollen} form verbal complexes which are then coordinated and finally combined with
 the other NPs/DPs in the sentence. The structure for (\ref{ex-wird-backen-muessen}) with a flat VP
 including the subject is given in Figure~\vref{fig-wird-backen-muessen}.\footnote{%
-  This structure is equivalent modulo node names to what Zaenen \& Kaplan's rules \citeyearpar[\page 413]{ZK2002a} would license. Zaenen \& Kaplan's rule incorporate a linearization constraint that prevents orders in
+  This structure is equivalent, modulo node names, to what Zaenen \& Kaplan's rules \citeyearpar[\page 413]{ZK2002a} would license. Zaenen \& Kaplan's rule incorporate a linearization constraint that prevents orders in
   the verbal complex in which the governing verb is not final. So they exclude so-called Auxiliary
   Flip. But this can be fixed easily.
 }
@@ -2753,7 +2795,7 @@ sm edges
 \caption{Analysis of German clause involving a verbal complex and a flat clausal structure}\label{fig-wird-backen-muessen}
 \end{figure}
 
-\citet{BKPZ82a-u} developed an account of cross-serial dependencies that explains sentences like
+\citet{BKPZ82a-u} developed an account of cross"=serial dependencies that explains sentences like
 (\mex{1}) by assuming that objects and prepositional objects are part of a verbless VP with the verb
 being realized in the verbal complex. 
 \ea
@@ -2791,10 +2833,10 @@ arguments of the same case when there is not sufficient context information to r
 argument fills which role, but this is also the case with simplex verbs. See \citew[Section~11.4]{Mueller99a} for discussion.
   
 The point about these examples is that unless one is willing to include the subject of AcI verbs
-among the daughters of a very flat phrase structure rule there is no way to model sentences like
+among the daughters of a very flat phrase structure rule, there is no way to model sentences like
 (\mex{0}) with a flat rule for benefactives like (\ref{c-struc-vp-benefactive-optional-args}) or
 (\ref{c-struc-vp-benefactive-resultative-optional-args-adjuncts}) and continuous
-constituents.\footnote{\label{fn-zk-rule}
+constituents.\footnote{\label{fn-zk-rule}%
 The rule in (i) is an adapted version of the rule that \citet[\page 413]{ZK2002a} use to
 describe sentences with verbal complexes:
 \ea
@@ -2804,8 +2846,8 @@ describe sentences with verbal complexes:
 \rulenode{(V$'$)\\* \up~=~\down}}
 \z
 The `*' after the DP symbol means that there can be arbitrarily many DPs. The grammatical function
-that is filled by the DPs is not specified. It is just specified that the DP has to fill a NGF,
-where NGF stands for \emph{nominal grammatical function}, that is \subj, \obj, OBJ2, \ldots. The
+that is filled by the DPs is not specified. It is just specified that the DP has to fill an NGF,
+where NGF stands for \emph{nominal grammatical function}, that is \subjlfg, \obj, OBJ2, \ldots. The
 \comp* ensures that the specification of the nominal grammatical function can reach any feature
 structure at the end of a path of several \comp{}s. This solves the problem that \emph{einen Kuchen}
 in (\ref{ex-wird-backen-muessen}) is the object of \emph{backen}. By using the functional
@@ -2815,11 +2857,11 @@ not capture the constraints that are supposed to be associated with a constructi
 benefactives. Independent of where the benefactive template is introduced one would need functional
 uncertainties to find an appropriate verb in the verbal complex. 
 
-Note furthermore that Zaenen \&
-Kaplan's rule is to simple. Their rule and the version provided here only admits NPs/DPs before the
-verbal complex but German allows for NPs, PPs, APs and even VPs and CPs and there is no fixed order of these
-elements. So rather than specifying DP* and appropriate grammatical function assignments, one would
-have to specify (DP|PP|AP|VP|CP)* and appropriate grammatical functions.
+Note furthermore that Zaenen \& Kaplan's rule is too simple. Their rule and the version provided
+here only admits NPs/DPs before the verbal complex but German allows for NPs, PPs, APs and even VPs
+and CPs and there is no fixed order of these elements. So rather than specifying DP* and appropriate
+grammatical function assignments, one would have to specify (DP|PP|AP|VP|CP)* and appropriate
+grammatical functions.
 
 In any case the idea of isolating a constructional pattern for benefactives would
 not be captured by such a proposal and again the rule in (i) and possible adaptions are very different from the c"=structure
@@ -2828,7 +2870,7 @@ rule for English.
 
 
 Having a rule that combines \emph{backen} with four NPs is 
-highly implausible though since the nominative depends on the AcI verb and not on \emph{backen}. In
+highly implausible though, since the nominative depends on the AcI verb and not on \emph{backen}. In
 any case such a rule would be inappropriate for English. See also \citew[Section~2.5]{Mueller2006d} for examples of
 the interaction of AcI verbs with resultative constructions.
 
@@ -2895,13 +2937,13 @@ Note also that benefactive datives appear in adjectival environments as in (\mex
 The examples in (\mex{0}) show that the arguments of \emph{backende} may be scrambled, as is common
 in verbal environments.
 
-In order to account for these datives one would have to assume that the adjective to AP rule that
+In order to account for these datives one would have to assume that the adjective-to-AP rule that
 would be parallel to (\ref{LFG-v-vp-two}) introduces the dative. The semantics of the benefactive
 template ensures that the benefactive argument is not added to intransitive
 verbs like \emph{lachen} `to laugh' or participles like \emph{lachende} `laughing'. 
 While this is a possible analysis, I find the overall approach unattractive. First, it does not have anything to do with
 the original constructional proposal but just states that the benefactive may be introduced at
-several places in syntax. Second, the unary branching syntactic rule is applying to a lexical
+several places in syntax. Second, the unary branching syntactic rule applies to a lexical
 item and hence is very similar to a lexical rule. Third, the analysis does not capture cross"=linguistic commonalities of the
 construction. In a lexical rule"=based approach such as the one that was suggested by
 \citet[Section~5]{BC99a}, \citet{Cook2006a-u}, \citet{Kibort2008a}, and \citet{Toivonen2013a}, a
@@ -2920,11 +2962,11 @@ recursion results in spurious ambiguities. Introducing it at the rule that gets 
 is almost equivalent to the lexical approach and in any case it would not have anything to do with a
 specific configuration that licenses the construction. Making the benefactive template dependent on
 the presence of a DP/NP with a certain case fails for several reasons: first, the benefactive
-argument may be realized in various cases and, second, it my be realized far away from its canonical
+argument may be realized in various cases and, second, it may be realized far away from its canonical
 place and hence all constraints referring to the f-structure or the $\sigma$ structure would
 potentially address wrong structures because of nonlocal dependencies. I furthermore showed that
 flat structures are not an option either since partial structures are needed for partial verb phrase
-fronting and coordination and in any case flat structures may be interrupted by verbal complexes
+fronting and coordination, and in any case flat structures may be interrupted by verbal complexes
 that embed the main verb under modal operators, again leading to the inaccessibility of the relevant
 f-structures and $\sigma$ structures.
 
@@ -2942,7 +2984,7 @@ suggests the following c-structure rule for resultatives in English:
 \phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down}
 \rulenode{DP\\*(\up\ \obj) = \down}
-\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subj) = (\up \obj)\\*\hspace{-3em}@RESULT-T((\up PRED FN)) }\hspace{-2ex}
+\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up \obj)\\*\hspace{-3em}@RESULT-T((\up PRED FN)) }\hspace{-2ex}
 }
 \z
 Christie claims that the result predicate cannot be extracted. According to her examples like
@@ -3053,9 +3095,9 @@ information to the f-structure that belongs to the V projection either as head o
 this ensures that the result predicate and the object has to be present in the
 f-structure. Extracted elements are contributed to the f-structure via functional uncertainty.
 
-Concluding this subsection it can be said that the fact that result adjectives form a verbal complex in German while they are part of the
+Concluding this subsection, it can be said that the fact that result adjectives form a verbal complex in German while they are part of the
 VP in English could not be covered if the use of templates required similar structures
-cross-linguistically. The lexical approach, on the other hand, does not have problems since the
+cross"=linguistically. The lexical approach, on the other hand, does not have problems since the
 lexicon just states which arguments are needed leaving the actual realization to the syntax, which
 may be different from language to language.
 
@@ -3087,7 +3129,7 @@ In order to cover this in a phrasal analysis, one would need a resultative/benef
 %\resizebox{.99\linewidth}{!}{%
 \begin{tabular}[t]{@{}l@{~}l@{}}
 {V$'$} $\to$ & 
-  \rulenode{(DP)\\*(\up\ \subj) = \down}
+  \rulenode{(DP)\\*(\up\ \subjlfg) = \down}
   \rulenode{(DP)\\*(\up\ \obj) = \down} 
   \rulenode{(DP)\\*(\up\ \objtheta) = \down}\\\\[-2mm]
 %
@@ -3134,15 +3176,15 @@ the general form of the rules is similar and generalizations can be captured.
 \section{Summary}
 
 I showed in this section that it is difficult to find places for the attachment of the benefactive
-and resultative templates in phrasal LFG analyses. Even if it was straight-forward to find
+and resultative templates in phrasal LFG analyses. Even if it was straightforward to find
 attachment sites, the respective c"=structures would be different in English and German. While
-having different c"=structures for different languages is common in LFG and not a problem per se, it
-is a missing generalization if the benefactive and resultative construction is associated with
-totally different configurations in the descriptions of the two languages. What has to be covered is
-that we have the same type of dependency in both languages and this can be covered in valence
+having different c"=structures for different languages is common in LFG and not a problem per se,
+associating the benefactive and resultative construction with totally different configurations in
+the descriptions of the two languages misses a generalization. What has to be accounted for is
+that we have the same type of dependency in both languages and this can be expressed in valence
 representations in lexical items that interact with syntactic rules of the respective languages \citep{MuellerLexikon}.
 
-\chapter{A lexical approach that can capture the cross-linguistic generalizations}
+\chapter{A lexical approach that can capture the cross"=linguistic generalizations}
 \label{sec-lexical-approach-hpsg}
 
 This book has argued for a return to lexical analyses. Analyses of the respective phenomena have been
@@ -3156,7 +3198,7 @@ underlying framework that is assumed is Constructional HPSG \citep{Sag97a} with 
 German and more generally Germanic made in \citew{MuellerLehrbuch3,MuellerHPSGHandbook,MuellerGermanic}.
 The analysis is able to capture generalizations about the benefactive construction across the
 Germanic languages, something that is not possible in LFG since the labels for the arguments
-(\argtwo and \argthree) and the grammatical functions of the benefactive argument is different in
+(\argtwo and \argthree) and the grammatical functions of the benefactive argument are different in
 German and English.
 \eal
 \ex He baked her a cake.
@@ -3172,8 +3214,8 @@ normal agentive passive. In what follows, I show how the commonalities between (
 
 What is needed is basically two lexical rules: one for the introduction of the
 benefactive argument and one for the introduction of resultative predicates and the respective
-object. In addition we of course need syntactic schemata that license the structures of German and
-English. These schemata are maximally simple: Four schemata are relevant in the context of this
+object. In addition, we of course need syntactic schemata that license the structures of German and
+English. These schemata are maximally simple. Four schemata are relevant in the context of this
 book: 1) the Specifier-Head Schema, 2) the Head-Complement Schema, 3) the Filler-Head Schema and 4)
 the Predicate Complex Schema.
 
@@ -3264,7 +3306,7 @@ head with the first element on the \compsl first, while in the analysis of the G
 
 The schemata that license these structures are shown in Figure~\ref{fig-spr-head}
 and~\ref{fig-head-comp}. Figure~\ref{fig-spr-head} shows a sketch of the Specifier-Head Schema,
-which licenses structures with a specifier. This is subject-VP combinations in English and
+which licenses structures with a specifier. These are subject-VP combinations in English and
 determiner-\nbar combinations in both English and German.
 \begin{figure}
 \centering
@@ -3297,8 +3339,8 @@ is combined with the head \iboxb{2}. The remainder of the list is passed up to t
 
 For German, I assume that adjuncts may attach to any verbal projection (to be precise, to any
 verb-final projection) and in English adjuncts may attach to VPs. Because of the binary branching
-structures the fact that adjuncts can appear anywhere between arguments in German is accounted
-for. Adjuncts do not have to be mentioned in argument structure constructions as would be the case
+structures, the fact that adjuncts can appear anywhere between arguments in German is accounted
+for. Adjuncts do not have to be mentioned in argument structure constructions, as would be the case
 in phrasal models of German syntax assuming flat structures (see (\ref{c-struc-vp-benefactive-resultative-optional-args-adjuncts}) on page~\pageref{c-struc-vp-benefactive-resultative-optional-args-adjuncts}).
 
 
@@ -3337,7 +3379,7 @@ additional constraint that \ibox{1} is the empty list.
 
 The following lexical items and lexical rules assume a distinction between structural and lexical
 case. Roughly speaking, structural case is case that is assigned in certain structures, that is,
-case that may change. On the contrary, lexical case does not depend on the environment a
+case that may change. In contrast, lexical case does not depend on the environment a
 lexical item is used in. I assume that verbal arguments that are realized as nominative and
 accusative in active sentences bear structural case. The dative in German is treated as a lexical
 case. (\mex{1}) shows examples of structural cases:
@@ -3355,7 +3397,7 @@ case. (\mex{1}) shows examples of structural cases:
 \ex 
 \gll das Leerfischen des Teiches\\
      the empty.fishing the pond\\
-\glt `the fishing of the pond empty
+\glt `the fishing of the pond empty'
 \zl
 
 Case is assigned according to the following case principle \citep{Prze99,Meurers99b}:\footnote{%
@@ -3386,9 +3428,9 @@ linked to semantic roles of the predicate \emph{geben}. Instead of traditional r
 agent, recipient and theme, I use the features \textsc{arg1}, \textsc{arg2} and
 \textsc{arg3}.\footnote{%
 Since semantic relations correspond to types and types are specified for the features that are
-appropriate for objects of the type it follows that \textsc{arg1}, \textsc{arg2} and \textsc{arg3} are always
+appropriate for objects of the type, it follows that \textsc{arg1}, \textsc{arg2} and \textsc{arg3} are always
 present in feature structures of type \type{geben}. The AVM in (\mex{1}) corresponds to the more
-canonical notation geben(x,y,z), where X is \textsc{arg1}, y is \textsc{arg2} and z is \textsc{arg3}. 
+canonical notation $geben(x,y,z)$, where $x$ is \textsc{arg1}, $y$ is \textsc{arg2} and $z$ is \textsc{arg3}. 
 %% For verbs, I use these features like proto-roles in the
 %% sense of \citet{Dowty91a}. For example, the subject of \emph{sehen} `see' is usually called an
 %% experiencer. This is problematic if one wants to define passive as the suppression of an agent since
@@ -3410,7 +3452,7 @@ explain the complete semantic setup, but the interested reader is referred to
 \eas 
 Lexical entry for the stem \stem{geb} `give':\\
 \ms{
-arg-st & \sliste{ NP[\str]\ind{1}, NP[\ldat]\ind{2}, NP[\str]\ind{3} }\\[1mm]
+arg-st & \sliste{ NP[\str]\ind{1}, NP[\ldat]\ind{2}, NP[\str]\ind{3} }\\[2mm]
 cont   & \ms{ ind & \ibox{4} event
             }\\
 rels   & \relliste{ \ms[geben]{
@@ -3428,9 +3470,10 @@ This seems to be similar to what \citet{AGT2014a} do with their
 \templaten{agent} and \templaten{patient} templates. The \templaten{agent} template introduces an
 \argone and the \templaten{patient} template introduces an \argtwo. See page~\pageref{ex:agent-temp} for the
 definition of their templates. For the predicate \emph{draw} they assume that it has an \argone and
-an \argtwo on semantic structure, if it is used without the benefactive argument. The benefactive
+an \argtwo on semantic structure if it is used without the benefactive argument. The benefactive
 template adds an \argthree and remaps \argtwo to \argthree. So rather than godzilla, abbreviated as
-g in (\mex{1}a), Sandy is the \argtwo in (\mex{1}b). Godzilla is \argthree in (\mex{1}b).
+g in (\mex{1}a), Sandy is the \argtwo in (\mex{1}b). Godzilla is \argthree in
+(\mex{1}b).\todostefan{italics for godzilla usw.?}
 \eal
 \ex 
 \begin{tabular}[t]{@{}l@{}}
@@ -3496,7 +3539,7 @@ benefactive relation that states that the benefactive of the event \ibox{3} is \
 identified with the referential index of the added NP.
 
 The output of the lexical rule is a verb stem with at least three arguments. Language-specific
-constraints for verbs with three nominal arguments apply and make sure that the middle NP has
+constraints for verbs with three nominal arguments apply and ensure that the middle NP has
 structural case in English and lexical dative in German. This is not shown in the general version of
 the lexical rule above. The English version of the rule is more restrictive than the German one in
 requiring that the input be strictly transitive. This excludes the application of the benefactive
@@ -3550,7 +3593,7 @@ it can appear in is parallel. See Figure~\ref{fig-nobody-gives-him-the-book} for
 %% type and hence does not have to mention case at all.
 
 Of course, the analysis presented here is incomplete in the sense that further constraints are
-needed to rule out the application of the rule to verbs that are inappropriate semantically. Since
+needed to prevent the application of the rule to semantically inappropriate verbs. Since
 the focus of the book is to discuss phrasal and lexical approaches and since the incorporation of
 the respective semantic constraints into a phrasal approach would be exactly parallel, I do not go
 into semantic details here.
@@ -3584,8 +3627,8 @@ rels   & \ibox{3} $\oplus$ \liste{ \ms[cause]{
 } 
 \z
 The input is a verbal stem that selects for an NP with structural case and the output is a verbal
-stem selecting for two NPs with structural case and a result predicate. The second NP is
-simultaneously the subject of the result predicate. I assume that there is not a person that causes
+stem selecting for two NPs with structural case and a result predicate. The second NP is both an
+argument of the verb and the subject of the result predicate. I assume that there is not a person that causes
 the change of state but rather that the event of the input verb \iboxb{2} causes the change of
 state. This makes it possible to capture cases in which there is no participant in the causing
 event:\footnote{%
@@ -3601,7 +3644,7 @@ event:\footnote{%
 \gll Es regnet die Stühle / Wäsche nass.\\
      it rains  the chairs {} clothes wet\\
 \z
-The highest event of the semantic representation of the output of the rule is the \type{cause} event
+The highest event of the semantic representation in the output of the rule is the \type{cause} event
 \iboxb{6}. Since \type{cause} is the highest event, \iboxt{6} is also the \textsc{index} value of
 the output, which is represented under \textsc{cont|ind}. The \type{cause} event has as its first
 argument the event expressed by the input verb \iboxb{2} and as its second argument the
@@ -3625,7 +3668,7 @@ intransitive version of \emph{fischen}:\\
 \end{tabular}
 
 \ex 
-\resizebox{.99\linewidth}{!}{%
+%\resizebox{.99\linewidth}{!}{%
 \begin{tabular}[t]{@{}l@{}}
 resultative version of \emph{fischen}:\\
 \ms{
@@ -3646,9 +3689,10 @@ resultative version of \emph{fischen}:\\
                           arg1 & \ibox{4}
                         } }\\
     }
-\end{tabular}}
+\end{tabular}
+%}
 \zl
-The event variable of the \type{cause} relation is \iboxt{6}. It is also the \indv of the lexical item.
+The event variable of the \type{cause} relation is \iboxt{5}. It is also the \indv of the lexical item.
 \iboxt{6} is the event variable of \emph{fischen}. It is the \textsc{arg1} of the \type{cause}
 relation. The second argument of the \type{cause} relation is the \type{become} relation. The
 \type{become} relation takes the semantic contribution of the result predicate \iboxb{4} as argument.
@@ -3662,9 +3706,9 @@ The lexical item for the resultative construction may be input to the benefactiv
 output is shown in (\mex{1}):
 \ea 
 ditransitive version of resultative \emph{fischen}:
-\oneline{%
+%\oneline{%
 \ms{
-    phon   & \phonliste{ fisch }\\
+    phon   & \phonliste{ fisch }\\[2mm]
     arg-st & \sliste{ NP[\str]\ind{1}, NP[\ldat]\ind{3}, \ibox{2} NP[\str], X(P)[\textsc{prd}+, \subj \sliste{ \ibox{2} }]:\ibox{4} }\\
     ind    & \ibox{5}\\
     rels   & \relliste{ \ms[fischen]{
@@ -3684,7 +3728,8 @@ ditransitive version of resultative \emph{fischen}:
                             arg0 & \ibox{5}\\
                             arg1 & \ibox{3}
                         } }\\
-    }}
+    }
+%}
 \z
 In (\mex{0}) we have NP[\str], NP[\str] and the predicative X(P) as arguments and in addition we
 also have the benefactive NP[\ldat]. The benefactive NP is linked to the \type{benefactive} relation
@@ -3723,7 +3768,7 @@ sm edges
                    [fisch-;fish] ] ] ] ] ] ] ] ]
 \end{forest}
 }
-\caption{Analysis of \emph{dass er ihm den Teich leer fischt} `that he fishes the pond empty for him', an example in which the benefactive
+\caption{Analysis of [\emph{dass}] \emph{er ihm den Teich leer fischt} `that he fishes the pond empty for him', an example in which the benefactive
   and the resultative construction interact}\label{fig-analyis-benefactive+resultative}
 \end{figure}
 The resultative lexical rule applies to the mono-valent version of the lexical item for \stem{fish}
@@ -3733,7 +3778,7 @@ to this lexical item and licenses another lexical item that selects for nominati
 accusative and a result predicate. An inflectional lexical rule licenses the \vnull. The \vnull is
 combined with the adjective to form a verbal complex, indicated by the label \vnull at the mother
 node. \emph{leer fischt} is combined with its arguments by the German version of the Head-Complement
-Schema in Figure~\ref{fig-head-comp-free} and hence it is explained why six orders of the nominative, dative and accusative argument
+Schema in Figure~\ref{fig-head-comp-free}, and hence it is explained why six orders of the nominative, dative and accusative argument
 are possible. In the analysis suggested here, the fact that scrambling is possible is a fact of German syntax that is independent of
 how the arguments are licensed.
 
@@ -3748,7 +3793,7 @@ derivational lexical rules that derive prenominal participles:
 \ex 
 \gll der den Teich leer fischende Mann\\
      the the pond empty fishing man\\
-\glt `the man who fishes the pond empty'
+\glt `the man who fishes the pond empty'\todostefan{who fishes out the pond}
 \ex 
 \gll der den Teich seinem Freund leer fischende Mann\\
      the the pond  his    friend empty fishing man\\
@@ -3833,7 +3878,7 @@ to these NPs since it is realized in a nominal environment.
 
 \citet[\page 516]{Toivonen2013a} argues that the benefactive construction is best seen as an
 instantiation of the phrasal configuration in Figure~\vref{fig-benefactive-toivonen}.
-She noticed that question formation that involve the extraction of the benefactive NP are
+She noticed that question formation involving the extraction of the benefactive NP is
 excluded. The respective examples in (\ref{ex-question-formation}) are repeated here as (\mex{1})
 and (\mex{2}) for convenience: 
 \exewidth{(235)}
@@ -3862,7 +3907,7 @@ My sister was carved a soap statue of Bugs Bunny (by a famous sculptor).
 She observed that all these ungrammatical examples are accounted for by assuming that benefactives
 are licensed in structures like the one given in Figure~\ref{fig-benefactive-toivonen}.
 
-If one wanted to assume that a certain configuration is stored as chunk one could do so without
+If one wanted to assume that a certain configuration is stored as chunk, one could do so without
 problems in the model suggested here. Figure~\ref{fig-phrasal-configuration-English} shows what would be stored for English.
 \begin{figure}
 \centerline{%
@@ -3882,14 +3927,14 @@ three-place one would be part of the stored configuration. This ensures that lan
 generalizations are captured. However, as I have shown, storing a phrasal configuration is not what
 is required here since extraction of the secondary object is possible (\ref{ex-extraction-secondary-object}) and the construction
 may be realized discontinuously in coordination structures (\ref{ex-coordination-benefactive}). However, there are other ways of
-blocking extraction and passivization. Passive is treated as the suppression of the subject. If
-there is an object with structural case it is the least oblique element in the passive and therefore
-it gets nominative by the Case Principle that is usually assumed. Now, if the case of the object is
+blocking extraction and passivization. The passive is treated as the suppression of the subject. If
+there is an object with structural case, it is the least oblique element in the passive and therefore
+it gets nominative by the Case Principle, which is usually assumed. Now, if the case of the object is
 lexically constrained to be accusative, the verbal lexeme can only be used in the active since
 otherwise the case specification of the benefactive argument as accusative would be in conflict with
-the assignment of nominative by the Case Principle. So, for speakers that allow for passivization
+the assignment of nominative by the Case Principle. So, for speakers that allow for passivization,
 the case of the subject and the two objects is just specified as structural with the actual value
-being underspecified and for speakers who do not allow for a passive, the case of the benefactive
+being underspecified, and for speakers who do not allow for a passive, the case of the benefactive
 argument is specified to be accusative.
 
 The extraction of primary objects is marked for all verbs that take two objects irrespective of the
@@ -3906,7 +3951,7 @@ amalgamation as suggested by \citet*{BMS2001a}.
 
 Note that this approach also predicts that constraints on extraction and passivization in
 coordinated structures affect the result of coordination. The reason is that the constraints on the
-selected arguments are identified in symmetric coordinations \citep[\page 202]{ps2}. Hence the \slasch constraints and the
+selected arguments are identified in symmetric coordinations \citep[\page 202]{ps2}. Hence, the \slasch constraints and the
 case constraints on the benefactive argument are effective on the mother node of verb coordinations
 as well. So, the analyses that introduce constraints for extraction and passivization lexically
 correctly predict that the coordination of two items is at least as restrictive as the individual
@@ -3935,7 +3980,7 @@ there is now a proposal that captures both German and English and the commonalit
 \chapter{Conclusions}
 \label{sec-conclusions}
 
-I have shown that both the benefactive construction and the resultative construction is more
+I have shown that both the benefactive and the resultative construction are more
 flexible than originally suggested by the authors who proposed phrasal configurations. All
 non-verbal parts of the resultative construction may be extracted or promoted by passivization. The
 secondary object of benefactive constructions may be extracted and some speakers allow for
@@ -3957,12 +4002,12 @@ coordination, partial fronting, and also certain accounts of fronting are proble
 pattern-based approaches to argument structure. 
 
 I have shown that all these problems disappear and crosslinguistic generalizations regarding the
-benefactive, resultative constructions and many other constructions can be captured if one returns
+benefactive, resultative and many other constructions can be captured if one returns
 to the traditional lexical analysis, which assumed that all arguments are introduced lexically. A
 version of the lexical analysis was presented in Chapter~\ref{sec-lexical-approach-hpsg}. This analysis is the basis of
 implemented fragments of German and English that have been developed in the CoreGram project
 \citep{MuellerGrammix,MuellerCoreGram}. As was demonstrated, the lexical rule for the benefactive in
-German and English has are the same. The languages differ in how the second argument of ditransitive
+German and English is the same. The languages differ in how the second argument of ditransitive
 verbs is realized since German has a morphologically marked dative case, which is absent from
 English. But this is a general property of ditransitive verbs that is independent of the benefactive
 rule. Lexical rules for resultative predicates are parallel for English and German. The differences
@@ -3971,16 +4016,16 @@ resultative construction.
 
 With the system of lexical rules in place, the phrasal schemata for specifier-head structures
 and head-complement structures in German and English are identical (or rather the schema for English
-is a specialization of the one of German). No special construction-specific
+is a specialization of the one for German). No special construction-specific
 stipulations are needed.
 
 By having shown that approaches assuming the resultative construction and/or the benefactive
-construction to be phrasal constructions run into problems, I have also shown that approaches that
-assume that all argument structure constructions are phrasal are problematic. Hence, this book is a
+construction to be phrasal constructions run into problems, I have also shown that approaches
+considering all argument structure constructions phrasal are problematic. Hence, this book is a
 contribution to the general debate about argument structure constructions. It shows that phrasal
-constructions (in LFG) are not suited to deal with argument structure. Instead lexical constructions
+constructions (in LFG) are not suited to deal with argument structure. Instead, lexical constructions
 (lexical rules) are needed. The syntactic combinations are licensed by rather abstract syntactic
-rules. Nevertheless phrasal constructions are useful and necessary in those parts of grammars that
+rules. Nevertheless, phrasal constructions are useful and necessary in those parts of grammars that
 do not interact with argument structure and valence alternations. An example of such a construction
 is the N-P-N construction (\emph{student after student}), in which no head can be identified
 \citep{Jackendoff2008a}. So, this book provides support for the position that a mix of the proposals

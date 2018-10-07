@@ -20,6 +20,7 @@
 @STRING{londonnewyork={London} }
 %@STRING{berlinheidelbergnewyork={Berlin/""Heidelberg/""New York, NY} }
 @STRING{berlinheidelbergnewyork={Berlin} }
+@STRING{berlinboston={Berlin} }
 @STRING{bgdsl	= "Beitr{\"a}ge zur Geschichte der deutschen Sprache und Literatur" }
 @STRING{bls	= "{Berkeley Linguistic Society}" }
 @STRING{cls	= "Chicago Linguistic Society" }
@@ -29,9 +30,10 @@
 
 % Verlage:
 @STRING{buske    = {Helmut Buske Verlag} }
-@STRING{blackwell= {Blackwell Publishing Ltd} }
+@STRING{blackwell= {Blackwell Publishers Ltd} }
 @STRING{cambridgeuk={Cambridge, UK} }
 @STRING{cambridgeusa={Cambridge, MA} }
+@STRING{cambridgeusaLondon={Cambridge, MA} }
 @STRING{camup	= {Cambridge University Press} }
 @STRING{cup	= {Cambridge University Press} }
 %@STRING{chicago	= {Chicago, IL} }
@@ -134,6 +136,9 @@
 @STRING{osuwpl	= "{OSU Working Papers in Linguistics}" }
 @STRING{oup	= {Oxford University Press} }
 @STRING{oxford	= {Oxford} }
+%@STRING{oxfordcambridge	= {Oxford, UK/Cambridge, USA} }
+@STRING{oxfordcambridge	= {Oxford} }
+@STRING{oxfordnewyork	= {Oxford} }
 @STRING{passau	= {Passau} }
 @STRING{philadelphia={Philadelphia, PA} }
 
@@ -188,6 +193,16 @@
 @PREAMBLE{ "\providecommand{\noopsort}[1]{} \providecommand*{\donothing}[1]{}
 	   \providecommand*{\printsecond}[2]{#2}" }
 
+@Article{	  Findlay2016a-u,
+  author	= {Jamie Y. Findlay},
+  journal	= {Journal of Language Modelling},
+  number	= {2},
+  pages		= {293--338},
+  title		= {Mapping Theory without Argument Structure},
+  volume	= {4},
+  year		= {2016}
+}
+
 @Book{		  Chomsky2001b-u,
   address	= {Cambridge, MA},
   author	= {Noam Chomsky},
@@ -195,6 +210,21 @@
   publisher	= {MIT Press},
   title		= {Beyond Explanatory Adequacy},
   year		= {2001}
+}
+
+@Book{		  MuellerGT-Eng2,
+  address	= {Berlin},
+  author	= {Stefan Müller},
+  booktitle	= {Grammatical Theory: {From} {Transformational Grammar} to
+		  Constraint-Based Approaches},
+  doi		= {10.5281/zenodo.1193241},
+  edition	= {2},
+  number	= {1},
+  publisher	= {Language Science Press},
+  series	= {Textbooks in Language Sciences},
+  title		= {Grammatical Theory: {From} {Transformational Grammar} to
+		  Constraint-Based Approaches},
+  year		= {2018}
 }
 
 @Article{	  Bruening2018a,
@@ -213,6 +243,7 @@
   author	= {Stefan Müller},
   booktitle	= {{Wortschätze: Dynamik, Muster, Komplexität: Jahrbuch des
 		  Instituts für deutsche Sprache}},
+  doi		= {10.1515/9783110579963-002},
   editor	= {Stefan Engelberg and Henning Lobin and Kathrin Steyer and
 		  Sascha Wolfer},
   langid	= {german},
@@ -249,9 +280,11 @@
 		  Wintner},
   doi		= {10.1017/S0022226716000189},
   journal	= {Journal of Linguistics},
+  number	= {4},
   pages		= {1--50},
   publisher	= {Cambridge University Press},
   title		= {Representing Argument Structure},
+  volume	= {53},
   year		= {2016}
 }
 
@@ -264,9 +297,9 @@
 }
 
 @Book{		  Bresnan2001a,
-  address	= {Oxford, UK/Cambridge, USA},
+  address	= {Oxford},
   author	= {Joan Bresnan},
-  publisher	= {Blackwell},
+  publisher	= {Blackwell Publishers Ltd},
   title		= {{Lexical-Functional Syntax}},
   year		= {2001}
 }
@@ -285,14 +318,14 @@
 }
 
 @Book{		  BATW2015a,
-  address	= {Oxford, UK/Cambridge, USA},
+  address	= {Oxford},
   author	= {Joan Bresnan and Ash Asudeh and Ida Toivonen and Stephen
 		  Mark Wechsler},
   booktitle	= {Lexical-Functional Syntax},
   doi		= {10.1002/9781119105664},
   edition	= {2},
   isbn		= {9781119105664},
-  publisher	= {Blackwell Publishing Ltd},
+  publisher	= {Blackwell Publishers Ltd},
   title		= {Lexical-Functional Syntax},
   year		= {2015}
 }
@@ -300,6 +333,7 @@
 @Article{	  LKD73a,
   author	= {D. Terence Langendoen and Nancy Kalish-Landon and John
 		  Dore},
+  doi		= {10.1016/0010-0277(73)90004-8},
   journal	= {Cognition},
   number	= {2},
   pages		= {451--478},
@@ -420,7 +454,7 @@
   author	= {Adger, David},
   booktitle	= {Core Syntax: {A Minimalist} Approach},
   number	= {1},
-  publisher	= {Oxford University Press Oxford},
+  publisher	= {Oxford University Press},
   series	= {Oxford Core Linguistics},
   title		= {Core Syntax: {A Minimalist} Approach},
   year		= {2003}
@@ -464,6 +498,7 @@
 @InCollection{	  vanTrijp2011a,
   author	= {van Trijp, Remi},
   crossref	= {SteelsFluid-ed},
+  doi		= {10.1075/cal.11.07tri},
   pages		= {115--145},
   title		= {A Design Pattern for Argument Structure Constructions}
 }
@@ -495,6 +530,7 @@
 
 @Article{	  MWArgStReply,
   author	= {Stefan Müller and Stephen Mark Wechsler},
+  doi		= {10.1515/tl-2014-0009},
   journal	= {Theoretical Linguistics},
   number	= {1--2},
   pages		= {187--224},
@@ -505,7 +541,7 @@
 }
 
 @Book{		  FM2016a-ed,
-  address	= {Berlin, Boston},
+  address	= {Berlin},
   booktitle	= {{Satztypen und Konstruktionen im Deutschen}},
   editor	= {Rita Fink\-bei\-ner and Jörg Meibauer},
   langid	= {german},
@@ -567,6 +603,7 @@
 
 @Article{	  Goldberg2013b,
   author	= {Adele E. Goldberg},
+  doi		= {10.1111/mila.12028},
   journal	= {Mind and Language},
   number	= {4},
   pages		= {479--491},
@@ -588,7 +625,6 @@
   pages		= {43--72},
   title		= {Word Order Constraints on Verb Clusters in {German} and
 		  {Dutch}},
-  url		= {http://www.let.rug.nl/~vannoord/papers/},
   urldate	= {2018-02-25}
 }
 
@@ -616,7 +652,10 @@
 @InCollection{	  Croft2003a,
   author	= {William Croft},
   crossref	= {CBDP2003a-ed},
+  doi		= {10.1075/cilt.243.07cro},
+  number	= {243},
   pages		= {49--68},
+  series	= {Current Issues in Linguistic Theory},
   title		= {Lexical Rules vs.\ Constructions: {A} False Dichotomy}
 }
 
@@ -645,6 +684,7 @@
 @InCollection{	  Haider90a,
   author	= {Hubert Haider},
   crossref	= {GS90a-ed},
+  doi		= {10.1075/la.5.06hai},
   pages		= {93--112},
   title		= {Topicalization and other Puzzles of {German} Syntax}
 }
@@ -704,7 +744,6 @@
   booktitle	= {Syntax -- {Theory} and Analysis: {An} International
 		  Handbook},
   doi		= {10.1515/9783110363708-004},
-  edition	= {2},
   editor	= {Tibor Kiss and Artemis Alexiadou},
   number	= {42.2},
   pages		= {937--973},
@@ -832,7 +871,7 @@
   journal	= {Cognitive Science},
   number	= {4},
   pages		= {752--793},
-  title		= {From Exemplar to Grammar: Integrating Analogy and
+  title		= {From Exemplar to Grammar: {Integrating} Analogy and
 		  Probability in Language Learning},
   volume	= {33},
   year		= {2009}
@@ -900,6 +939,8 @@
   number	= {4},
   pages		= {487--526},
   title		= {Lexical Rules in Constraint"=Based Grammar},
+  url		= {http://www.aclweb.org/anthology/J99-4002},
+  urldate	= {2018-10-07},
   volume	= {25},
   year		= {1999}
 }
@@ -926,7 +967,7 @@
 }
 
 @Book{		  Chomsky95a-u,
-  address	= {Cambridge, MA/""London, England},
+  address	= {Cambridge, MA},
   author	= {Chomsky, Noam},
   number	= {28},
   publisher	= {MIT Press},
@@ -957,13 +998,13 @@
 @InCollection{	  Cook2006a-u,
   address	= {Amsterdam},
   author	= {Philippa Cook},
-  booktitle	= {Datives and Similar Cases: Between Argument Structure and
-		  Event Structure},
+  booktitle	= {Datives and Similar Cases: {Between} Argument Structure
+		  and Event Structure},
   editor	= {Daniel Hole and André Meinunger and Werner Abraham},
   pages		= {141--184},
   publisher	= {John Benjamins Publishing Co.},
-  title		= {The Datives that aren't Born Equal: Beneficiaries and the
-		  Dative Passive},
+  title		= {The Datives that aren't Born Equal: {Beneficiaries} and
+		  the Dative Passive},
   year		= {2006}
 }
 
@@ -972,11 +1013,12 @@
 		  Ivan A. Sag},
   author	= {Copestake, Ann and Daniel P. Flickinger and Carl J.
 		  Pollard and Ivan A. Sag},
+  doi		= {10.1007/s11168-006-6327-9},
   journal	= {Research on Language and Computation},
-  number	= {3},
+  number	= {2--3},
   pages		= {281--332},
   title		= {{Minimal Recursion Semantics}: {An} Introduction},
-  volume	= {4},
+  volume	= {3},
   year		= {2005}
 }
 
@@ -999,7 +1041,7 @@
 }
 
 @Book{		  Dalrymple2001a-u,
-  address	= {New York},
+  address	= {New York, NY},
   author	= {Mary Dalrymple},
   number	= {34},
   publisher	= {Academic Press},
@@ -1046,6 +1088,7 @@
 @Article{	  FPAG2007a,
   author	= {Daniel Freudenthal and Julian M. Pine and Javier
 		  Aguado-Orea and Fernand Gobet},
+  doi		= {10.1080/15326900701221454},
   journal	= {Cognitive Science},
   number	= {2},
   pages		= {311--341},
@@ -1067,6 +1110,7 @@
 
 @Article{	  Goldberg2013a,
   author	= {Adele E. Goldberg},
+  doi		= {10.1111/mila.12026},
   journal	= {Mind and Language},
   number	= {4},
   pages		= {435--465},
@@ -1077,7 +1121,7 @@
 }
 
 @Book{		  Goldberg2006a,
-  address	= {Oxford, New York},
+  address	= {Oxford},
   author	= {Adele E. Goldberg},
   publisher	= {Oxford University Press},
   series	= {Oxford Linguistics},
@@ -1088,7 +1132,9 @@
 
 @Article{	  Goldberg2004a,
   author	= {Adele E. Goldberg},
+  doi		= {10.1016/j.cognition.2004.03.003},
   journal	= {Cognition},
+  number	= {1},
   pages		= {77--84},
   title		= {But do we need {Universal Grammar}? {Comment} on {Lidz} et
 		  al.\ (2003)},
@@ -1177,7 +1223,8 @@
   author	= {Marc D. Hauser and Noam Chomsky and W. Tecumseh Fitch},
   doi		= {10.1126/science.298.5598.1569},
   journal	= {Science},
-  pages		= {1569-1579},
+  number	= {5598},
+  pages		= {1569--1579},
   title		= {The Faculty of Language: {What} Is It, Who Has It, and How
 		  Did It Evolve?},
   volume	= {298},
@@ -1213,7 +1260,7 @@
 }
 
 @Book{		  Jackendoff77a,
-  address	= {Cambridge, MA/""London, England},
+  address	= {Cambridge, MA},
   author	= {Ray S. Jackendoff},
   booktitle	= {{$\overline{\mbox{X}}$} {Syntax}: {A} Study of Phrase
 		  Structure},
@@ -1272,8 +1319,8 @@
   journal	= {Language},
   number	= {1},
   pages		= {1--33},
-  title		= {Grammatical {Constructions} and Linguistic
-		  Generalizations: {The} {What's X Doing Y? Construction}},
+  title		= {Grammatical Constructions and Linguistic Generalizations:
+		  {The} {What's X Doing Y? Construction}},
   volume	= {75},
   year		= {1999}
 }
@@ -1300,10 +1347,11 @@
 }
 
 @InProceedings{	  Mueller96b,
+  address	= {Berlin},
   author	= {Stefan Müller},
   booktitle	= {Natural Language Processing and Speech Technology:
-		  {Results} of the {3rd KONVENSConference, Bielefeld, October
-		  1996}},
+		  {Results} of the {3rd KONVENS Conference, Bielefeld,
+		  October 1996}},
   editor	= {Dafydd Gibbon},
   pages		= {223--236},
   publisher	= {Mouton de Gruyter},
@@ -1328,6 +1376,7 @@
 
 @Article{	  MuellerUnifying,
   author	= {Stefan Müller},
+  doi		= {10.1353/lan.2013.0061},
   journal	= {Language},
   number	= {4},
   pages		= {920--950},
@@ -1420,6 +1469,7 @@
 
 @Article{	  Nerbonne86a,
   author	= {John Nerbonne},
+  doi		= {10.1515/ling.1986.24.5.857},
   journal	= {Linguistics},
   number	= {5},
   pages		= {857--870},
@@ -1530,7 +1580,7 @@
   journal	= {Language Sciences},
   number	= {4},
   pages		= {391--423},
-  title		= {On Resultative Predicates and Clauses: Parallels between
+  title		= {On Resultative Predicates and Clauses: {Parallels} between
 		  {Korean} and {English}},
   volume	= {23},
   year		= {2001}
@@ -1538,6 +1588,7 @@
 
 @Article{	  Wunderlich97c,
   author	= {Dieter Wunderlich},
+  doi		= {10.1093/jos/14.2.95},
   journal	= {Journal of Semantics},
   number	= {2},
   pages		= {95--142},
@@ -1573,6 +1624,7 @@
 		  {The} {Resource Logic} Approach},
   editor	= {Mary Dalrymple},
   publisher	= {MIT Press},
+  series	= {Language, Speech, and Communication},
   title		= {Semantics and Syntax in {Lexical Functional Grammar}:
 		  {The} {Resource Logic} Approach},
   year		= {1999}
@@ -1851,6 +1903,7 @@
 @Book{		  SteelsFluid-ed,
   address	= {Amsterdam},
   booktitle	= {Design Patterns in {Fluid Construction Grammar}},
+  doi		= {10.1075/cal.11},
   editor	= {Steels, Luc},
   number	= {11},
   publisher	= {John Benjamins Publishing Co.},
