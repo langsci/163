@@ -350,7 +350,7 @@ framework.
 The question, whether constructions like (\mex{0}) should be treated as lexical or as
 phrasal constructions, has been discussed in the literature in several papers
 \citep{GJ2004a,Mueller2006d,Goldberg2013b,MWArgSt} but since most Construction Grammar publications
-(intentionally, see \citew{Goldberg2006a}) are not formalized, the discussion of aspects not treated
+(intentionally, see \citew[Section~10.4]{Goldberg2006a}) are not formalized, the discussion of aspects not treated
 in the original proposal (\eg interaction with morphology, application of the approach to
 non"=configurational languages like German, partial verb phrase fronting) was rather
 hypothetical. There have been Construction Grammar-inspired proposals in HPSG
@@ -700,7 +700,7 @@ grammatical function in the f-structure that belongs to the A feature (identifie
 function from the semantic structure to the f-structure ($\sigma^{-1}$)). 
 
 If we expand the templates for \templaten{Arg1}, \templaten{Arg2}, and \templaten{Arg3}, we
-get:\todostefan{small caps für OBJ usw.?}
+get:
 \eal
 % ARG1, ARG2, ARG3 expanded
 \label{ex-arg1-arg2-arg3}
@@ -1329,7 +1329,7 @@ He hammered the metal flat.
 \phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down}
 \rulenode{DP\\*(\up\ \obj) = \down}
-\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up \obj)\\*\hspace{-3em}@\textsc{result-t}((\up \pred \textsc{fn})) }\hspace{-2ex}
+\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down\ \subjlfg) = (\up\ \obj)\\*\hspace{-3em}@\textsc{result-t}((\up\ \textsc{pred} \textsc{fn})) }\hspace{-2ex}
 }
 \z
 The resultative template licenses the result predicate and provides a glue semantics term that
@@ -1338,12 +1338,12 @@ the transitive verb \emph{hammer}:
 \ea
 \oneline{%
 \begin{tabular}[t]{@{}lcl@{}}
-hammer & V & $\lambda e . hammer(e) : (\uparrow _{\sigma} $REL$ ) $\\
+hammer & V & $\lambda e . hammer(e) : (\uparrow _{\sigma} $\textsc{rel}$ ) $\\
        &   & $\left( \begin{tabular}{@{~}l@{~}}
                      @\textsc{transitive}(hammer) \\
                      \small $\lambda P \lambda x \lambda y \lambda e . P(e) \wedge agent(e)=x \wedge patient(e)=y $: \normalsize \\
-                     $(\uparrow _{\sigma} $REL$) \linimp\ (\uparrow $SUBJ$) _{\sigma}
-                     \linimp\ (\uparrow $OBJ$) _{\sigma} \linimp\ \ \uparrow _{\sigma}$
+                     $(\uparrow _{\sigma} $\textsc{rel}$) \linimp\ (\uparrow \subj) _{\sigma}
+                     \linimp\ (\uparrow \obj) _{\sigma} \linimp\ \ \uparrow _{\sigma}$
                      \end{tabular} \right) $
 \end{tabular}}
 \z
@@ -1382,14 +1382,15 @@ predicate and its subject:
 \phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down}
 \rulenode{DP\\*(\up\ \obj) = \down}
-\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up
-  \obj)\\*\hspace{-3em}@\textsc{result-t}((\up \pred \textsc{fn})) }\hspace{-2ex}
+\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down\ \subjlfg) = (\up\ \obj)\\*
+             \hspace{-3em}@\textsc{result-t}((\up \textsc{pred} \textsc{fn})) }\hspace{-2ex}
 }
 \z
 In Christie's analysis, verbs are assumed to only optionally provide semantic and f-structure
 constraints. If they enter the resultative construction in (\mex{0}), the construction takes over
 and provides a \textsc{pred} value and specifications for grammatical functions.
 
+\largerpage
 The rule for the benefactive construction in (\mex{1}) was provided in
 (\ref{c-struc-vp-benefactive}) and is repeated here as (\mex{2}) for convenience:
 \ea
@@ -1481,6 +1482,7 @@ The examples show that some speakers permit the promotion of the benefactive to 
 %% there is no intervening material between the benefactive and the VP from which it is extracted. See
 %% \citew{Gibson98a} on integration costs. 
 
+%\largerpage[2]
 While the extraction of the benefactive is out as (\ref{ex-which-teacher-toivonen}), repeated here
 as (\mex{1}a), shows, the examples in (\mex{1}b,c) show that the secondary object in a benefactive construction can be extracted.
 \eal
@@ -1553,6 +1555,7 @@ Christie's proposal since the structure would remain the same with some argument
     the lexical analysis is to be preferred. 
 }
 
+\largerpage[2]
 The situation with the benefactive construction is similar: in (\ref{ex-benefactive-just-verb}) we
 have a bare verb and all other items are promoted or extracted. The template is associated with the
 verb. One could either insist on the phrasal pattern in (\ref{c-struc-vp-benefactive}) and posit an
@@ -1583,6 +1586,7 @@ However, this would also rule out passives of normal ditransitives like (\mex{1}
 My sister was given a soap statue of Bugs Bunny (by a famous sculptor).
 }
 \z
+\largerpage
 So, if the rule were responsible for normal ditransitives as well as for benefactives, all
 constraints regarding the obligatory presence of daughters would have to reside in the template
 since this is the only part that is different between benefactives and normal ditransitives. The
@@ -1665,13 +1669,13 @@ verbs that govern a subject and an accusative object. While \emph{lösbar} `solv
 \zl
 The resultative construction also interacts with \bard: the adjectives \emph{leerfischbar}
 `empty.fish.able' = `It is possible to fish X empty.' and \emph{platt\-fahr\-bar}\footnote{%
-  \url{http://www.forum-3dcenter.org/vbulletin/archive/index.php/t-236032.htmls}, 02.06.2016.
+  \url{http://www.forum-3dcenter.org/vbulletin/archive/index.php/t-236032.htmls}, 2016-06-02.
 } `flat.drive.able' can be formed. If arguments are introduced by phrasal configurations which refer to
 fully derived and inflected words or phrases consisting of words, the
 accessibility of the valence information to the morphology component is not given and it remains an
 open question how phrasal analyses can explain the contrasts in (\mex{0}) and the fact that
 \bard does apply to verbs in the resultative construction. In \citegen{Christie2010a} analysis, the intransitive
-verbs probably would\todostefan{or \emph{would probably}?} be represented as intransitive in the lexicon with an optional semantic
+verbs would probably be represented as intransitive in the lexicon with an optional semantic
 representation. As was argued in \citew{Mueller2003b}, the derivational affix attaches to the verbal
 stem and hence the information about an accusative object would not be available in Christie's
 approach. Even if one assumes that \emph{leer} and \emph{fisch} are combined before the attachment
@@ -1680,7 +1684,8 @@ an accusative object would have to be available at the point when \suffix{bar} a
 not be contributed by phrase structure rules in the syntax. Reviewers suggested that special rules
 could combine adjectives and verbs in the morphology component and license the object there. While
 this is possible in principle, this would be an instance of a missed generalization since one would
-have to assume two unrelated rules that mention the resultative template.\todostefan{Timm: Warum "`unrelated"'? Sie haben doch wahrscheinlich einen ähnlichen Zweck und eine ähnliche Form?}
+have to assume two unrelated rules that mention the resultative template.
+%\todostefan{Timm: Warum "`unrelated"'? Sie haben doch wahrscheinlich einen ähnlichen Zweck und eine ähnliche Form?}
 
 Furthermore, there are resultative constructions with phrasal result phrases like (\mex{1}) and here
 it could not be argued that PP and verbal stem form a new verbal stem to which \suffix{bar}
@@ -2499,7 +2504,7 @@ argument has to be realized as nominative in dative-passive constructions like (
 \citew[Section~3.2.3]{Mueller2002b} for details of an auxiliary-based approach in HPSG). When
 dative"=passives are embedded under AcI verbs, the subject becomes the object of the AcI verb and
 hence receives accusative. And finally, arguments with structural case that are realized in nominal
-environments get genitive, as in (\mex{0}c)\todostefan{like in ...?}. Nothing special has to be stipulated in the lexical
+environments get genitive, as in (\mex{0}c). Nothing special has to be stipulated in the lexical
 approach.
 A phrasal approach that wants to assign semantic roles based on dative case is lost though.
 
@@ -2568,6 +2573,7 @@ hence would have a rule that differs from the c-structure rule for English. A mi
 
 \subsubsection{Adjuncts}
 
+\largerpage
 Furthermore, German differs from English in allowing adjuncts to appear everywhere between the
 arguments of a verb. So, all of the following sentences are possible:
 \eal
@@ -2594,6 +2600,7 @@ look as in (\mex{1}):\footnote{%
   See \citet[\page 146]{Uszkoreit87a} and \citet{Kasper94a} for similar flat rules in GPSG and HPSG,
   respectively.
 }
+
 \ea\label{c-struc-vp-benefactive-resultative-optional-args-adjuncts}
 \resizebox{.99\linewidth}{!}{%
 \begin{tabular}[t]{@{}l@{~}l@{}}
@@ -2828,6 +2835,7 @@ to point out that it would not extend to German since, first, subjects can be sc
 arguments so a VP without the subject would not be an appropriate unit to begin with and, second,
 subjects of higher verbs may be scrambled with objects of embedded verbs, as is demonstrated by the
 examples in (\mex{1}):
+\largerpage
 \eal
 \ex 
 \gll dass den Mann       seiner Frau     solchen Kuchen niemand backen sah\\
@@ -2841,7 +2849,7 @@ examples in (\mex{1}):
 \gll dass solchen Kuchen niemand den Mann seiner Frau backen sah\\
      that such.\acc{} cake nobody.\nom{} the.\acc{} man his.\dat{} wife bake saw\\
 \zl
-These are three examples that exemplify the phenomenon but in principle all permutations of
+These are three examples exemplifying the phenomenon but in principle all permutations of
 arguments belonging to verbs of a verbal complex are possible. Of course there are problems with
 arguments of the same case when there is not sufficient context information to resolve which
 argument fills which role, but this is also the case with simplex verbs. See \citew[Section~11.4]{Mueller99a} for discussion.
@@ -2998,7 +3006,7 @@ suggests the following c-structure rule for resultatives in English:
 \phraserule{V$'$}{
 \rulenode{V\\* \up~=~\down}
 \rulenode{DP\\*(\up\ \obj) = \down}
-\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up \obj)\\*\hspace{-3em}@\textsc{result-t}((\up \pred \textsc{fn})) }\hspace{-2ex}
+\rulenode{\{ DP|AP|PP \}\\*(\up\ \xcomp) = \down\\*(\down \subjlfg) = (\up \obj)\\*\hspace{-3em}@\textsc{result-t}((\up \textsc{pred} \textsc{fn})) }\hspace{-2ex}
 }
 \z
 Christie claims that the result predicate cannot be extracted. According to her examples like
@@ -3226,6 +3234,7 @@ who allow for the passive), but \emph{ihr}, being dative, cannot be promoted to 
 normal agentive passive. In what follows, I show how the commonalities between (\mex{0}a) and
 (\mex{0}b) can be accounted for.
 
+\largerpage
 What is needed is basically two lexical rules: one for the introduction of the
 benefactive argument and one for the introduction of resultative predicates and the respective
 object. In addition, we of course need syntactic schemata that license the structures of German and
@@ -3270,6 +3279,7 @@ structural difference between subjects and objects of finite verbs in languages 
 
 \subsection{Phrase structure rules}
 
+\largerpage
 The Figures~\ref{fig-nobody-gives-him-the-book}
 and~\ref{fig-niemand-ihm-das-buch-gibt} show how the lexical items can be used in actual analyses.
 
@@ -3360,6 +3370,7 @@ in phrasal models of German syntax assuming flat structures (see (\ref{c-struc-v
 
 \subsection{Scrambling}
 
+\largerpage
 Now, German differs from English in allowing scrambling. Rather than having a fixed constituent
 order as in English, German allows for six order variants of sentences with verbs with three
 arguments (see (\ref{ex-scrambling-benefactive}) on page~\pageref{ex-scrambling-benefactive}). This can be allowed for by relaxing the order in which heads are combined with their
@@ -3389,13 +3400,17 @@ additional constraint that \ibox{1} is the empty list.
 
 \section{Lexical items and lexical rules}
 
+In what follows, I briefly discuss case assignment and linking. For a more detailed discussion of
+case assignment see \citew[Chapter~14]{MuellerLehrbuch1}.
+
 \subsection{Structural and lexical case}
 
+\largerpage
 The following lexical items and lexical rules assume a distinction between structural and lexical
 case. Roughly speaking, structural case is case that is assigned in certain structures, that is,
 case that may change. In contrast, lexical case does not depend on the environment a
 lexical item is used in. I assume that verbal arguments that are realized as nominative and
-accusative in active sentences bear structural case. The dative in German is treated as a lexical
+accusative in active sentences bear structural case. Following \citet{Haider86}, the dative in German is treated as a lexical
 case. (\mex{1}) shows examples of structural cases:
 \eal
 \ex 
@@ -3523,6 +3538,7 @@ interaction of these lexical rules with nominalization.
 
 \subsubsection{Benefactives}
 
+\largerpage
 I assume the lexical rule in (\mex{1}) for adding an additional benefactive argument:
 \eas
 Lexical rule for benefactives (German and English):\\
@@ -3566,7 +3582,7 @@ The result of applying the lexical rule to (\mex{1}a) is (\mex{1}b):
 \begin{tabular}[t]{@{}l@{}}
 monotransitive version of \emph{backen}:\\
 \ms{
-    phon   & \phonliste{ back }\\[1mm]
+    phon   & \phonliste{ back }\\[2mm]
     arg-st & \sliste{ NP[\str]\ind{1}, NP[\str]\ind{2} }\\
     ind    & \ibox{3} event\\
     rels   & \relliste{ \ms[backen]{
@@ -3580,7 +3596,7 @@ monotransitive version of \emph{backen}:\\
 \begin{tabular}[t]{@{}l@{}}
 ditransitive version of \emph{backen}:\\
 \ms{
-    phon   & \phonliste{ back }\\[1mm]
+    phon   & \phonliste{ back }\\[2mm]
     arg-st & \sliste{ NP[\str]\ind{1}, NP[\ldat]\ind{4}, NP[\str]\ind{2} }\\
     ind    & \ibox{3} event\\
     rels   & \relliste{ \ms[backen]{
@@ -3593,6 +3609,7 @@ ditransitive version of \emph{backen}:\\
     }
 \end{tabular}
 \zl
+\largerpage[2]
 A dative argument is added between the two NPs that bear structural case and this dative argument is
 linked to a role in the benefactive relation.
 
@@ -3711,7 +3728,7 @@ The event variable of the \type{cause} relation is \iboxt{5}. It is also the \in
 relation. The second argument of the \type{cause} relation is the \type{become} relation. The
 \type{become} relation takes the semantic contribution of the result predicate \iboxb{4} as argument.
 
-A more readable semantic representation that corresponds to (\mex{0}b) is given in (\mex{1}):
+A more readable semantic representation corresponding to the one in (\mex{0}b) is given in (\mex{1}):
 \ea
 cause(e1, fischen(e2,x), become(e3,P))
 \z
@@ -3749,14 +3766,14 @@ In (\mex{0}) we have NP[\str], NP[\str] and the predicative X(P) as arguments an
 also have the benefactive NP[\ldat]. The benefactive NP is linked to the \type{benefactive} relation
 \iboxb{3}.
 
-A more readable semantic representation that corresponds to (\mex{0}) is given in (\mex{1}):
+A more readable semantic representation corresponding to (\mex{0}) is the formula in (\mex{1}):
 \ea
 cause(e1, fischen(e2,x), become(e3,P)) $\wedge$ benefactive(e1,y)
 \z
 
 
 Figure~\vref{fig-analyis-benefactive+resultative} shows the analysis of (\ref{ex-dass-er-ihm-den-Teich-leer-fischt}).
-\begin{figure}
+\begin{figure}[b]
 \centerfit{%
 \begin{forest}
 sm edges
@@ -3921,6 +3938,7 @@ My sister was carved a soap statue of Bugs Bunny (by a famous sculptor).
 She observed that all these ungrammatical examples are accounted for by assuming that benefactives
 are licensed in structures like the one given in Figure~\ref{fig-benefactive-toivonen}.
 
+\largerpage
 If one wanted to assume that a certain configuration is stored as chunk, one could do so without
 problems in the model suggested here. Figure~\ref{fig-phrasal-configuration-English} shows what would be stored for English.
 \begin{figure}
