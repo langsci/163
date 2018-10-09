@@ -49,7 +49,7 @@ for providing the \LaTeX{} code for a lexical item.
 I thank Steve Wechsler for discussion of an earlier version of this book. Thanks to Jonas Kuhn for
 discussion of the attachment of constraints to c-structures and Economy of Expression.
 
-I also want to thank the participants of HeadLex 2016 for (intense) discussion. Miriam Butt, Mary Dalrymple,
+I also want to thank the participants of HeadLex 2016, the joint conference on LFG and HPSG, for (intense) discussion. Miriam Butt, Mary Dalrymple,
  Ron Kaplan, and Anna Kibort deserve special mention.
 
 Thanks also goes to Martin Haspelmath and Adam Przepiórkowski for comments on an earlier version of this book.
@@ -58,7 +58,7 @@ Furthermore, I thank Gert Webelhuth, Gerald Penn, Tom Wasow, Paul Kay, %Antwort 
 Adele Goldberg, Jean-Pierre Koenig, Doug Arnold, Aaron Broadwell, and Berthold Crysmann for various
 comments and pointers to relevant literature.
 
-A five page abstract was submitted to HeadLex 2016, the joint conference on LFG and HPSG. I am
+A five page abstract was submitted to HeadLex 2016. I am
 grateful to the reviewers of this abstract and the reviewers of a revised 20 page version. I also
 thank Miriam Butt and Tracy Holloway King for comments on and discussion of the proceedings version.  The
 comments helped a lot to shape and improve this book. Thanks!  
@@ -853,7 +853,7 @@ The \templaten{Benefactive} template is defined as follows:
    \oneline{%
 \begin{tabular}[t]{@{}l@{}}
      \template{Arg3}\\[.5ex]
-   \pformula{\lambda x\lambda y\lambda P\lambda e.P(y)(e) ~\wedge~ \mathit{beneficiary}(e) = x}
+   \pformula{\lambda x\lambda y\lambda P\lambda e.P(y)(e) ~\wedge~ \textit{beneficiary}\hspace{.1em}(e) = x}
      {(\upsig \feat{arg$_2$}) \linimp 
       (\upsig \feat{arg$_3$}) \linimp\newline {}[(\upsig \feat{arg$_2$}) \linimp (\upsig \feat{event}) \linimp
      \Upsig] \linimp
@@ -866,17 +866,20 @@ logic basically maps a two-place predicate to a three-place predicate.
 
 If we expand the call to the \templaten{Arg3} template, we get (\mex{1}):
 \ea
-\oneline{   \begin{tabular}[t]{@{}l@{}}
+%\vspace{-\baselineskip}
+\scalebox{.93}{%
+%\oneline{%
+\begin{tabular}[t]{@{}l@{}}
 % ARG3
       \{ (\up \{\feat{obj}$\mid$\feat{obj}$_\theta$\})\sig $=$  (\upsig \feat{arg}$_3$)  $\mid$
       (\upsig \feat{arg}$_3$)$_{{\sigma}^{-1}}$ $=$ $\varnothing$ \}\\
 % BENEFACTIVE
-   \pformula{\lambda x\lambda y\lambda P\lambda e.P(y)(e) ~\wedge~ \mathit{beneficiary}(e) = x}
+   \pformula{\lambda x\lambda y\lambda P\lambda e.P(y)(e) ~\wedge~ \textit{beneficiary}\hspace{.1em}(e) = x}
      {(\upsig \feat{arg$_2$}) \linimp 
       (\upsig \feat{arg$_3$}) \linimp\newline {}[(\upsig \feat{arg$_2$}) \linimp (\upsig \feat{event}) \linimp
      \Upsig] \linimp
       (\upsig \feat{event}) \linimp \upsig}
-  \end{tabular}}
+\end{tabular}}%\hspace{-3em}\mbox{}
 \z
 In an analysis of (\mex{1}), we would hence have the constraints on the lexical item for \emph{drew}
 given in (\ref{ex:draw-lex1}) and the constraints in (\mex{0}).
@@ -895,7 +898,7 @@ rule ensures that there is a \subjlfg. Without these additional constraints from
 configurations, the approach would overgenerate. As I will show in Chapter~\ref{sec-active-passive}, this is
 problematic since the assignment of grammatical functions in passives has to be taken care of by
 c"=structure rules that are specific to the benefactive construction, which results in missing
-generalizations.\todostefan{ncline does not work properly in texlive 2017, only 2016 works}\todostefan{kerning of \emph{beneficiary} is broken}
+generalizations.%\todostefan{ncline does not work properly in texlive 2017, only 2016 works}%\todostefan{kerning of \emph{beneficiary} is broken}
 
 \begin{figure}
   \centering
@@ -951,21 +954,21 @@ generalizations.\todostefan{ncline does not work properly in texlive 2017, only 
 \[
 \vmformula[\template{Benefactive}]{\lambda x\lambda y\lambda P\lambda
   e.P(y)(e) \wedge 
-     \mathit{beneficiary}(e) = x}{s \linimp g \linimp (s \linimp ev
+     \textit{beneficiary}\hspace{.1em}(e) = x}{s \linimp g \linimp (s \linimp ev
   \linimp d) \linimp ev \linimp d}
 \hspace*{1em}
 \vmformula[Sandy]{sandy}{s}
 \justifies
 \mformula{\lambda y\lambda P\lambda
   e.P(y)(e) \wedge 
-     \mathit{beneficiary}(e) = sandy}{g \linimp (s \linimp ev
+     \textit{beneficiary}\hspace{.1em}(e) = sandy}{g \linimp (s \linimp ev
   \linimp d) \linimp ev \linimp d}
 \]
 \vmformula[Godzilla]{godzilla}{g}
 \justifies
 \mformula{\lambda P\lambda
   e.P(godzilla)(e) \wedge 
-     \mathit{beneficiary}(e) = sandy}{(s \linimp ev
+     \textit{beneficiary}\hspace{.1em}(e) = sandy}{(s \linimp ev
   \linimp d) \linimp ev \linimp d}
 \]
 \[
@@ -988,16 +991,16 @@ generalizations.\todostefan{ncline does not work properly in texlive 2017, only 
 \justifies
 \formula{\lambda
   e.draw^\prime(godzilla)(kim)(e) \wedge 
-     \mathit{beneficiary}(e) = sandy:ev \linimp d}
+     \textit{beneficiary}\hspace{.1em}(e) = sandy:ev \linimp d}
 \]
 \justifies
 \formula{\exists e.[draw^\prime(godzilla)(kim)(e) \wedge 
-     \mathit{beneficiary}(e) = sandy \wedge past(e)]:d}
+     \textit{beneficiary}\hspace{.1em}(e) = sandy \wedge past(e)]:d}
 \]
 \justifies
 \formula{\exists e.[draw(e) \wedge patient(e) = godzilla \wedge
   agent(e) = kim \wedge 
-     \mathit{beneficiary}(e) = sandy \wedge past(e)]:d}
+     \textit{beneficiary}\hspace{.1em}(e) = sandy \wedge past(e)]:d}
 \using \betared
 \end{prooftree}
 }
@@ -1050,14 +1053,17 @@ a-structures for the transitive and the ditransitive use of \emph{cook}:
     f-structure:  &                 &           & \subjlfg  & \obj        & \objtheta\\
     \end{tabular}
 \zl
+\largerpage
 Lexical Mapping Theory makes sure that the arguments that are labeled with $-$o, $-$r and $+$o are
 mapped to the respective grammatical functions. The important point about this analysis is that
 there are two lexemes: one for transitive \emph{cook} with an a-structure that contains two elements and
 one for the ditransitive version with an a-structure that contains three elements. The a-structures
-are ordered lists and it is impossible to add an element into the middle of a list by a monotonic
+are ordered lists with a fixed arity and it is impossible to add an element into the middle of such a list by a monotonic
 gathering of constraints (\eg inheritance).\footnote{%
   It is possible to extend lists at the end if defaults and overriding are permitted. See
-  \citew{MuellerDefaults} for discussion.
+  \citew{MuellerDefaults} for discussion. It is also possible to leave the number of elements in a
+  list underspecified and state constraints on membership and order in such lists. See \citew[Section~7.5.2]{MuellerLehrbuch1} for problems of
+  such accounts.
 }
 The template-based approach circumvents this problem by not stipulating an order of elements in a
 list. Rather than using an ordered representation like lists, it assumes an s-structure into which
@@ -1320,7 +1326,7 @@ suppressed by the impersonalization.}
 \section{Resultative constructions}
 
 \citet{Christie2010a} assumes the c-structure rule in (\mex{2}) for transitive resultative
-constructions like the one in (\mex{1}):\todostefan{fix font sizes in rules}
+constructions like the one in (\mex{1}):
 \ea
 He hammered the metal flat.
 \z
@@ -3500,9 +3506,9 @@ This seems to be similar to what \citet{AGT2014a} do with their
 \argone and the \templaten{Patient} template introduces an \argtwo. See page~\pageref{ex:agent-temp} for the
 definition of their templates. For the predicate \emph{draw} they assume that it has an \argone and
 an \argtwo on semantic structure if it is used without the benefactive argument. The benefactive
-template adds an \argthree and remaps \argtwo to \argthree. So rather than godzilla, abbreviated as
-g in (\mex{1}a), Sandy is the \argtwo in (\mex{1}b). Godzilla is \argthree in
-(\mex{1}b).\todostefan{italics for godzilla usw.?}
+template adds an \argthree and remaps \argtwo to \argthree. So rather than \emph{godzilla}, abbreviated as
+\textit{g} in (\mex{1}a), \emph{Sandy} is the \argtwo in (\mex{1}b). \emph{Godzilla} is \argthree in
+(\mex{1}b).
 \eal
 \ex 
 \begin{tabular}[t]{@{}l@{}}
@@ -3824,7 +3830,8 @@ derivational lexical rules that derive prenominal participles:
 \ex 
 \gll der den Teich leer fischende Mann\\
      the the pond empty fishing man\\
-\glt `the man who fishes the pond empty'\todostefan{who fishes out the pond}
+\glt `the man who fishes the pond empty'
+%\todostefan{who fishes out the pond} Mary, Ash, ... read this
 \ex 
 \gll der den Teich seinem Freund leer fischende Mann\\
      the the pond  his    friend empty fishing man\\

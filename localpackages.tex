@@ -24,6 +24,17 @@
 \usepackage{./styles/semantics}
 %\usepackage{ndproof}
 
+% relies on pstricks
+
+\makeatletter
+\@ifpackagelater{pstricks}{2015/11/15}{%
+    % Package is new enough
+    \PackageError{pstricks}{We need texlive 2017 with pstricks 2015/11/14}%
+}{%
+%    \PackageError{<your package or document name>}{Package <name> is to old <...>}%
+}
+\makeatother
+
 \usepackage{avm}
 
 \usepackage{ash}
