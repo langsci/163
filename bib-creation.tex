@@ -1,4 +1,3 @@
-%% -*- coding:utf-8 -*-
 % !TEX encoding = UTF-8 Unicode
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%   $RCSfile: phrasal-or-lexical.tex,v $
@@ -13,12 +12,12 @@
 	        %,blackandwhite
 	        %,smallfont
 %	        ,draftmode
-                ,bibtex
+                ,biber
                 ,newtxmath
+                ,nonflat
                 ,babelshorthands
                 %,showindex
-		  ]{langsci-bibtex/langscibook}                          
-
+		  ]{langsci/langscibook}                          
 
 % Anonymisierung
 %\newcommand{\omitted}[1]{[omitted]}
@@ -32,17 +31,19 @@
 
 
 
+%\bibliography{phrasal-lfg}
+
+\bibliography{bib-abbr,biblio}
 
 \input{phrasal-lfg-include}
 
 
+\input{backmatter}
 
 
+% This file contains all the citeations also including crossrefs.
+\InputIfFileExists{tmpfile.tex}{\input{tmpfile}}{\relax}
 
 
-
-
-%\bibliographystyle{unified} 
-\bibliography{bib-abbr,biblio}
 
 \end{document}

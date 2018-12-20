@@ -50,15 +50,17 @@ o-public: ${HOME}/Sites/Pub/phrasal-lfg-langsci.pdf
 
 #	svn commit -m "automatic commit"
 
+bib: phrasal-lfg.bib
 
 phrasal-lfg.bib: ../../Bibliographien/biblio.bib
 	xelatex -no-pdf -interaction=nonstopmode bib-creation 
-	bibtex bib-creation
+	biber -m=1 bib-creation.bcf       # `--mincrossref | -m 1` produces a .bbl with all the references 
+	bbl2nocite bib-creation tmpfile
 	xelatex -no-pdf -interaction=nonstopmode bib-creation 
-	$(BIBTOOL) -r ../../Bibliographien/.bibtool77-no-comments  -x bib-creation.aux -o phrasal-lfg-tmp.bib
-	cat ../../Bibliographien/bib-abbr.bib phrasal-lfg-tmp.bib > phrasal-lfg.bib
-	\rm -r phrasal-lfg-tmp.bib
+	biber --output_format=bibtex bib-creation.bcf -O phrasal-lfg.bib
 
+#	biber bib-creation 
+#	biber --output_format=bibtex --output_resolve bib-creation.bcf -O gt.bib	
 
 clean:
 	find . -name \*\.bak -exec \rm {} \;

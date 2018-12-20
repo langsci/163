@@ -28,6 +28,7 @@
 \newcommand{\lsISBNsoftcoverusTwo}{000-0-000000-00-0}
 \newcommand{\lsBookDOI}{??}
 \newcommand{\lsChapterDOI}{??}
+\newcommand{\lsID}{??}
 \newcommand{\lsURL}{http://langsci-press.org/catalog}
 \newcommand{\lsSeries}{eotms}
 \newcommand{\lsSpineBreadth}{20mm}
